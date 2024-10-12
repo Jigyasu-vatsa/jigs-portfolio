@@ -9,7 +9,6 @@ body{
     width:1.55em;
     position:absolute;
     /* float: left; */
-    left: 2em;
 }
 
 /* head as RESUME */
@@ -47,13 +46,17 @@ body{
 }
 
 @media only screen and (max-width:700px){
+    /* logo is absolute positioned so margin from left */
+    .jvlogo{
+        left: 0.5em;
+    }
     /* hnavitems as Menu items */
     .hnavitems{
         padding: 0.5%;
     }
     .hnavitems a{
         color:rgb(129 8 8);
-        font-size: 1rem;
+        font-size: 0.8rem;
         font-weight: bold;
         text-decoration: none;
     }
@@ -62,6 +65,11 @@ body{
 
 
 @media only screen and (min-width:701px){
+    /* logo is absolute positioned so margin from left */
+    .jvlogo{
+        left: 2em;
+    }
+
     .hnavitems{
     border-radius: 15%;
     box-shadow: 3px 3px 1px 1px rgb(198, 149, 98); 
@@ -395,7 +403,6 @@ body{
     justify-content: space-evenly;
     padding:0.5em 0 0em 0;
     text-align: center;
-    font-size: 1.8em;
     font-weight: 900;
     /* border: 2px solid rgb(4, 17, 10); */
 }
@@ -418,19 +425,29 @@ body{
 
 @media only screen and (max-width:900px){
 
+    /* taged css for initial project heading row */
+    .projectheadrow{
+        font-size: 1.3em;
+    }
+
+    /* <!-- flex column for project 0 --> */
+    .project{
+        font-size: 1.1em;
+    }
+
     
     /* taged css for project title column */
     .projecttitles{
-        padding: 0.2em 0.4em 0.2em 1em;
+        padding: 0.2em 0.4em 0.1em 1em;
         text-align: justify;
-        min-width:55%;
-        width:55%;
+        min-width:52%;
+        width:52%;
     }
 
     /* taged css for project associated with column */
     .projectwith{
-        min-width:30%;
-        width:30%;
+        min-width:28%;
+        width:28%;
     }
 
     /* taged css for project associated company logo column */
@@ -450,6 +467,16 @@ body{
 }
 
 @media only screen and (min-width:901px){
+
+    /* taged css for initial project heading row */
+    .projectheadrow{
+        font-size: 1.8em;
+    }
+
+    /* <!-- flex column for project 0 --> */
+    .project{
+        font-size: 1.1em;
+    }
 
     /* taged css for project title column */
     .projecttitles{
@@ -544,8 +571,21 @@ body{
 
 /* <!-- skillsimg css class for skills images --> */
 .skillsimg{
-    width:5em;
+    width:4.8em;
 }
+
+@media only screen and (max-width:650px){
+    .skillname{
+        font-size: 0.8em;
+    }
+}
+
+@media only screen and (min-width:651px){
+    .skillname{
+        font-size: 1em;
+    }
+}
+
 
 
 
@@ -910,12 +950,22 @@ body{
     text-align: center;
 }
 
-/* <!-- tag for training names --> */
-.trainingsname{
-    width:80%;
-    text-align: justify;
+@media only screen and (min-width:651px){
+    /* <!-- tag for training names --> */
+    .trainingsname{
+        width:80%;
+        text-align: justify;
+        font-size: 0.6em;
+    }
 }
 
+@media only screen and (min-width:651px){
+    /* <!-- tag for training names --> */
+    .trainingsname{
+        width:80%;
+        text-align: justify;
+    }
+}
 
 
 
@@ -968,33 +1018,64 @@ body{
     width:100%;
 }
 
-.suggestion1stsubcont label{
-    padding: 0.5% 0% 0.5% 0%;
-    font-weight: bold;
-    width:50%;
+@media only screen and (max-width:650px){
+    .suggestion1stsubcont label{
+        padding: 0.5% 0% 0.5% 0%;
+        font-weight: bold;
+        width:70%;
+    }
+
+    .suggestion1stsubcont input{
+        padding: 0.5% 0% 0.5% 0%;
+        font-weight: bold;
+        width:70%;
+    }
+
+    .suggestion1stsubcont textarea{
+        padding: 0.5% 0% 0.5% 0%;
+        font-weight: bold;
+        width:70%;
+        height:8%;
+    }
+
+    .suggestion1stsubcont button{
+        font-size: 1em;
+        margin: 1% 0% 1% 0%;
+        font-weight: bold;
+        width:70%;
+        box-shadow: 3px 3px 1px 1px rgb(198, 149, 98); 
+    }
+
 }
 
-.suggestion1stsubcont input{
-    padding: 0.5% 0% 0.5% 0%;
-    font-weight: bold;
-    width:50%;
-}
+@media only screen and (min-width:651px){
+    .suggestion1stsubcont label{
+        padding: 0.5% 0% 0.5% 0%;
+        font-weight: bold;
+        width:50%;
+    }
 
-.suggestion1stsubcont textarea{
-    padding: 0.5% 0% 0.5% 0%;
-    font-weight: bold;
-    width:50%;
-    height:8%;
-}
+    .suggestion1stsubcont input{
+        padding: 0.5% 0% 0.5% 0%;
+        font-weight: bold;
+        width:50%;
+    }
 
-.suggestion1stsubcont button{
-    font-size: 1em;
-    margin: 1% 0% 1% 0%;
-    font-weight: bold;
-    width:50%;
-    box-shadow: 3px 3px 1px 1px rgb(198, 149, 98); 
-}
+    .suggestion1stsubcont textarea{
+        padding: 0.5% 0% 0.5% 0%;
+        font-weight: bold;
+        width:50%;
+        height:8%;
+    }
 
+    .suggestion1stsubcont button{
+        font-size: 1em;
+        margin: 1% 0% 1% 0%;
+        font-weight: bold;
+        width:50%;
+        box-shadow: 3px 3px 1px 1px rgb(198, 149, 98); 
+    }
+}
 
 
 
@@ -1067,11 +1148,13 @@ body{
 .copyrightfooter{
     margin: 0;
     padding: 0;
+    font-size: 0.8em;
 }
 
 .designedby{
     margin: 0;
     padding: 0;
+    font-size: 0.7em;
 }
 
 
