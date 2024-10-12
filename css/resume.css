@@ -1,0 +1,1077 @@
+/* Body reset */
+body{
+    margin:0px;
+    padding: 0% 0% 0% 0%;
+}
+
+ /* company logo as jvlogo   */
+.jvlogo{
+    width:1.55em;
+    position:absolute;
+    /* float: left; */
+    left: 2em;
+}
+
+/* head as RESUME */
+.resumehead{
+    text-align: center;
+    margin: 0% 0% 0% 0%;
+    padding: 3% 0% 2% 0%;
+    background-color: rgb(227, 218, 218);
+}
+
+
+
+/* horizontal navbar */
+
+
+/* Horizontal hnav section */
+.hnav{
+    z-index: 5;
+    position: sticky;
+    top: 0;
+    background-color: rgb(245 229 207);
+}
+
+/* Horizontal hnavbar Flexbox ul tagged */
+.hnavbar{
+    display: flex;
+    list-style: none;
+    margin: 0% 0% 0% 0%;
+    padding: 0.5% 0% 0.7% 0%;
+    justify-content: space-around;
+}
+
+.hnavitems:hover{
+    cursor:pointer;
+}
+
+@media only screen and (max-width:700px){
+    /* hnavitems as Menu items */
+    .hnavitems{
+        padding: 0.5%;
+    }
+    .hnavitems a{
+        color:rgb(129 8 8);
+        font-size: 1rem;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+}
+
+
+@media only screen and (min-width:701px){
+    .hnavitems{
+    border-radius: 15%;
+    box-shadow: 3px 3px 1px 1px rgb(198, 149, 98); 
+    }
+
+    .hnavitems:hover {
+        background-color: rgb(47, 18, 135);
+        box-shadow: 3px 3px 1px 1px black;
+    }
+
+    .hnavitems:hover .hnav{
+        background-color: white;
+    }
+
+
+    .hnavitems a{
+        display: block;
+        padding: 0.4em;
+        color:rgb(129 8 8);
+        font-size: 1.3rem;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    .hnavitems:hover a{
+        color:white;
+    }
+    
+
+}
+
+
+
+/* intro */
+
+
+/* flexbox for intro */
+@media only screen and (max-width:700px){
+    /* intro main container */
+    .rheader{
+        position: relative;
+        display:flex;
+        width:100%;
+        flex-direction: column;
+        /* background-color: rgb(227, 218, 218); */
+    }
+
+    /* backgroud image in intro container and its opacity  */
+    .rheader::before{
+        content: "";
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        left: 0%;
+        bottom: 0%;
+        /* background-color: rgb(227, 218, 218); */
+        background: rgb(227, 218, 218) url("../images/intro.jpg") center;
+        opacity: 0.2;
+        z-index: -1;
+        
+    }
+
+    /* picture flex item */
+    .ppic{
+        width:100%;
+        height:100%; 
+    }
+/* profile pic css */
+    .profilePic{
+        width:50%;
+        height:32vh;
+        margin: 0% 0% 0% 25%;
+        padding: 0% 0% 0% 0%;
+        border-radius: 20% 10% 20% 10%;
+        box-shadow: 7px 7px 3px 3px lightblue;    
+    }
+}
+
+@media only screen and (min-width:701px){
+    /* intro main container */
+    .rheader{
+        position: relative;
+        display:flex;
+        width:99%;
+        flex-direction: row;
+        padding: 4.5% 0% 3.5% 1%;
+        /* background-color: rgb(227, 218, 218); */
+        
+    }
+
+    /* backgroud image in intro container and its opacity  */
+    .rheader::before{
+        content: "";
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        left: 0%;
+        bottom: 0%;
+        /* background-color: rgb(227, 218, 218); */
+        background: rgb(227, 218, 218) url("../images/intro.jpg") center;
+        opacity: 0.2;
+        z-index: -1;
+        
+    }
+
+    
+
+    /* picture flex item */
+    .ppic{
+        width:15%;
+        height:100%;    
+    }
+    /* profile pic css */
+    .profilePic{
+        width:95%;
+        height:32vh;
+        margin: 1% 0% 0% 0%;
+        padding: 0% 0% 0% 0%;
+        border-radius: 20% 0% 0% 10%;
+        box-shadow: 5px 5px 3px 3px rgb(161, 187, 195);    
+    }
+}
+
+
+
+/* info flex item under intro and flex box for details and quotes */
+.info{
+    display: flex;
+    width:100%;
+}
+/* division of flexitemforinfo */
+.flexitemforinfo{
+    width:150%;
+    margin:1% 1% 0% 1%;
+}
+@media only screen and (max-width:900px)
+{
+    /* division of flexitemforquotes */
+    .flexitemforquotes{
+    width:100%;
+    display: none;
+}
+}
+
+@media only screen and (min-width:901px)
+{
+    .flexitemforquotes{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+}
+
+/* tag for name */
+.nameTag{
+    display: inline-block ;
+    margin: 0;
+}
+
+/* detail section under info */
+.contact{
+    margin: 1%;
+}
+.mail, .phone, .resumeL{
+    text-decoration: none;
+}
+
+/* objective section under info */
+.objective{
+    margin: 1%;
+    text-align: justify;
+    font-weight: 500;
+}
+
+/* quote in image format */
+.quotePic{
+
+    margin: 5% 0 0 0;
+    width: 100%;
+    block-size: 100px;
+    animation: mymove 5s infinite;
+    
+}
+
+/* animating quotes */
+@keyframes mymove {
+    30% {block-size: 115px;}
+    80% {block-size: 200px;}
+}
+
+/* downloading of resume which is in pdf format */
+.resumedownloadbtn{
+    background-color: rgb(200, 150, 150);
+    text-align: center;
+    font-size: 1.4em;
+    font-weight:550;
+    text-decoration: none;
+    border-radius: 50%;
+    padding: 0.2em 0.5em 0.2em 0.3em;
+    box-shadow: 3px 3px 1px 1px rgb(119, 227, 91);
+}
+
+
+
+
+/* Experience */
+
+
+
+
+
+/* experience main container */
+.expcontainer{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* background-color: rgb(227, 218, 218); */
+    border: 1px solid rgb(4, 17, 10);
+}
+
+/* backgroud image in experience container and its opacity  */
+.expcontainer::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(227, 218, 218); */
+    background: rgb(227, 218, 218) url("../images/experience.jpg") center;
+    opacity: 0.2;
+    z-index: -1;
+    background-size: cover;
+}
+
+/* <!-- heading tag for experience --> */
+.expheading{
+    margin: 1em 0 0 0;
+    padding: 6% 0 4% 0;
+    text-align: center;
+}
+
+/* experience sub flex container */
+.exp{
+    display: flex;
+    border: 0.5px solid rgb(4, 17, 10);
+    border-top: 0px;
+}
+
+/* <!-- experience duration sections --> */
+.expduration{
+    min-width:10%;
+    /* background-color: rgb(227, 218, 218); */
+    text-align: center;
+}
+
+/* <!-- experience information for duration1 --> */
+.expinfo{
+    padding: 0 0.5em 0.3em 0.5em;
+}
+
+/* <!-- tag for company name --> */
+.companyname{
+    margin: 0.5em 0 0.2em 0;
+    font-weight: 800;
+}
+
+/* <!-- tag for working designation --> */
+.designation{
+    margin: 0.2em 0 0.2em 0;
+    font-weight: 400;
+}
+
+/* <!-- tag for experience description --> */
+.expdescription{
+    text-align: justify;
+    font-weight: 500;
+}
+
+/* button/option to download respective certificate */
+.expcertificatedownload{
+    float: right;
+    padding: 0.1em 0.5em 0.1em 0.5em;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 3px 3px 1px 1px rgb(171, 46, 27);
+}
+
+
+
+
+/* project section */
+
+
+
+
+/* <!-- projects main container --> */
+.projectcontainer{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0em 0em 3em 0em;
+    /* background-color: rgb(227, 218, 218); */
+    border: 2px solid rgb(4, 17, 10);
+    border-top: 0px;
+}
+
+/* backgroud image in project container and its opacity  */
+.projectcontainer::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(227, 218, 218); */
+    background: rgb(227, 218, 218) url("../images/projects.jpg") center;
+    opacity: 0.4;
+    z-index: -1;
+    background-size: cover;
+}
+
+/* <!-- heading tag for projects --> */
+.projectheading{
+    margin: 0 0 1em 0;
+    padding: 6% 0 4% 0;
+    text-align: center;
+    /* background-color: rgb(227, 218, 218); */
+}
+
+
+/* taged css for initial project heading row */
+.projectheadrow{
+    display: flex;
+    justify-content: space-evenly;
+    padding:0.5em 0 0em 0;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: 900;
+    /* border: 2px solid rgb(4, 17, 10); */
+}
+
+/* taged css for empty row */
+.projectempty{
+    min-height: 1.2em;
+    border-top: 2px solid rgb(4, 17, 10);
+}
+
+/* <!-- flex column for project 0 --> */
+.project{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0.2em 0 0.2em 0;
+    text-align: center;
+    font-size: 1.5em;
+    /* border: 2px solid rgb(4, 17, 10); */
+}
+
+@media only screen and (max-width:900px){
+
+    
+    /* taged css for project title column */
+    .projecttitles{
+        padding: 0.2em 0.4em 0.2em 1em;
+        text-align: justify;
+        min-width:55%;
+        width:55%;
+    }
+
+    /* taged css for project associated with column */
+    .projectwith{
+        min-width:30%;
+        width:30%;
+    }
+
+    /* taged css for project associated company logo column */
+    .psymbol{
+        display:none;
+    }
+
+    .projectcertificatedownload{
+    min-width: 5%;
+    max-width: 10%;
+    max-height: 1em;
+    padding: 0.1em 0.5em 0.1em 0.5em;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 3px 3px 1px 1px rgb(171, 46, 27);
+    }
+}
+
+@media only screen and (min-width:901px){
+
+    /* taged css for project title column */
+    .projecttitles{
+        padding: 0.2em 0.5em 0.2em 1em;
+        text-align: justify;
+        min-width:40%;
+        width:40%;
+    }
+
+    /* taged css for project associated with column */
+    .projectwith{
+        min-width:30%;
+        width:30%;
+    }
+
+
+    /* taged css for project associated company logo column */
+    .psymbol{
+        min-width: 15%;
+        width:15%;
+        padding: 0 1% 0 0;
+    }
+
+    .projectcomplogo{
+        width: 90%;
+    }
+
+    .projectcertificatedownload{
+    min-width: 5%;
+    max-width: 10%;
+    max-height: 1em;
+    padding: 0.1em 0.5em 0.1em 0.5em;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 3px 3px 1px 1px rgb(171, 46, 27);
+    }
+}
+
+
+
+/* skills section starts here */
+
+
+
+/* <!-- Skills main container starts from here  --> */
+.skillmainconatiner{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* background-color: rgb(227, 218, 218); */
+    /* border: 1px solid rgb(4, 17, 10); */
+    /* border-top: 0px; */
+}
+
+/* backgroud image in skill container and its opacity  */
+.skillmainconatiner::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(227, 218, 218); */
+    background: rgb(227, 218, 218) url("../images/skills.jpg") no-repeat center;
+    opacity: 0.1;
+    z-index: -1;
+    background-size: cover;
+    
+}
+
+
+/* <!-- heading tag for projects --> */
+.skillsheading{
+    margin: 0;
+    padding: 6% 0% 5% 0%;
+    text-align: center;
+}
+
+
+/* <!-- column wise flex item adjustment based on languages and frameworks --> */
+.skillcolumncontainer{
+    text-align: center;
+    padding: 3% 0 1% 0px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    /* background-color: rgb(227, 218, 218); */
+    /* border: 1px solid rgb(4, 17, 10); */
+}
+
+
+/* css for skillitems will be placed here as skillsitems */
+
+
+/* <!-- skillsimg css class for skills images --> */
+.skillsimg{
+    width:5em;
+}
+
+
+
+
+/* Education section starts here */
+
+
+
+/* <!-- Education main container starts from here  --> */
+.edumaincontainer{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* background-color: rgb(227, 218, 218); */
+    /* border: 1px solid rgb(4, 17, 10); */
+}
+
+/* backgroud image in Education container and its opacity  */
+.edumaincontainer::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(227, 218, 218); */
+    background: rgb(227, 218, 218) url("../images/education.jpg") center;
+    opacity: 0.3;
+    z-index: -1;
+    background-size: cover;
+}
+
+/* <!-- heading tag for education --> */
+.eduheading{
+    margin: 0;
+    padding: 6% 0% 5% 0%;
+    text-align: center;
+}
+
+
+
+/* <!-- Education row container starts from here  --> */
+.edurowcontainerhead{
+    text-align: center;
+    padding: 1% 0 1% 0px;
+    
+    font-weight: bolder;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    /* background-color: rgb(227, 218, 218); */
+    border: 1px solid rgb(4, 17, 10);
+    border-top: 0px;
+}
+
+
+
+/* <!-- Education row container starts from here  --> */
+.edurowcontainer{
+    text-align: center;
+    padding: 0.3% 0 0.1% 0px;
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    /* background-color: rgb(227, 218, 218); */
+    border: 1px solid rgb(4, 17, 10);
+    border-top: 0px;
+}
+
+
+/* css for passout year in head */
+.educol1containerhead{
+    min-width: 10%;
+    width: 14%;
+}
+
+/* css for education detail in head */
+.educol2containerhead{
+    min-width: 65%;
+    width: 68%;
+    padding: 0.1em 3.5em 0.1em 0.5em;
+    text-align: center;
+}
+
+/* css for passout year section */
+.educol1container{
+    min-width: 10%;
+    width: 14%;
+}
+
+/* css for education detail section */
+.educol2container{
+    min-width: 65%;
+    width: 68%;
+    padding: 0.1em 3.5em 0.1em 1.5em;
+    text-align: justify;
+}
+
+/* css for value of passing year */
+.eduyear{
+    font-weight: 550;
+}
+
+/* <!-- tag for educational course name --> */
+.educoursename{
+    margin: 0.5em 0 0.2em 0;
+    font-weight: 800;
+}
+
+/* <!-- tag for  educational institute name --> */
+.eduinstitutename{
+    margin: 0.2em 0 0.2em 0;
+    font-weight: 400;
+}
+
+/* <!-- tag for eductional degree course description --> */
+.educoursediscription{
+    text-align: justify;
+    font-weight: 500;
+}
+
+
+
+
+@media only screen and (max-width:800px){
+    
+    /* css for education download section in head */
+    .educol3containerhead{
+        display: none;
+    }
+    
+    /* css for education download section */
+    .educol3container{
+    display: none;
+    }
+}
+
+@media only screen and (min-width:801px){
+
+    /* css for education download section in head */
+    .educol3containerhead{
+    min-width: 9%;
+    width: 13%;
+    }
+
+    /* css for education download section */
+    .educol3container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        min-width: 9%;
+        width: 13%;
+        height: 5em;
+    }
+}
+
+
+
+
+
+/* css for download button 1 for marksheet */
+.edudownload1{
+    /* font-size: 0.9em; */
+    margin: 0.1em 0em 0.2em 0em;
+    padding: 0.1em 0.1em 0.1em 0.1em;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 3px 3px 1px 1px rgb(171, 46, 27);
+}
+
+/* css for download button 2 for certificate */
+.edudownload2{
+    /* font-size: 0.9em; */
+    margin: 0.1em 0em 0.2em 0em;
+    padding: 0.1em 0.1em 0.1em 0.1em;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 3px 3px 1px 1px rgb(171, 46, 27);
+}
+
+
+
+
+
+/* Achievement section starts here */
+
+
+
+/* <!-- Achievements main container starts from here  --> */
+.achmaincontainer{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* background-color: rgb(227, 218, 218); */
+    /* border: 1px solid rgb(4, 17, 10); */
+}
+
+/* backgroud image in achievement container and its opacity  */
+.achmaincontainer::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(227, 218, 218); */
+    background: rgb(227, 218, 218) url("../images/Achievements.jpg") no-repeat center;
+    opacity: 0.4;
+    z-index: -1;
+    background-size: cover;
+    
+}
+
+
+/* <!-- heading tag for achievments --> */
+.achheading{
+    margin: 0;
+    padding: 6% 0% 5% 0%;
+    text-align: center;
+}
+
+
+/* sliding images of science fair and details container */
+.achsciencefair{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* <!-- achievements slider as sliding images of science fair as achievementslider--> */
+.achievementslider{
+    margin: auto auto;
+    width: 60%;
+    height: 400px;
+    overflow: hidden;
+    
+}
+
+
+.achievementslider img{
+    width: 50%;
+    height: 400px;
+    float: left;
+}
+
+.slidechild {width: calc(60% * 4); animation: slideShow 10s ease infinite;}
+
+@keyframes slideShow {
+    20% {margin-left: 0%;}
+    40% {margin-left: calc(-30% * 1);}
+    60% {margin-left: calc(-30% * 2);}
+    80% {margin-left: calc(-45% * 3);}
+    /* 100% {margin-left: calc(-55% * 4);} */
+}
+
+
+/* contents inside achsciencefair*/
+.sciencefairdetails{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+}
+
+/* flex container to display two marquee in one line  */
+.achsciencefairmarqueecontainer{
+    display: flex;
+    width: 70%;
+    justify-content: space-evenly;
+
+}
+
+.achsciencefairmarquee{
+    width: 35%;
+
+}
+
+
+
+.sciencefairdetailsh3{
+    text-align: center;
+    margin: 0.2em;
+    font-weight: 900;
+    color: rgb(65, 40, 21);
+}
+
+/* kvs captain achievements container */
+.achkvsall{
+    margin: 3% 0 2% 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.achkvsschoolcapt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+}
+
+.achkvsschoolcapt img{
+    width:50%;
+}
+
+@media only screen and (max-width:799px){
+    .achkvsmarquee{
+        width: 75%;
+    }
+}
+
+
+@media only screen and (min-width:800px){
+    .achkvsmarquee{
+        width: 60%;
+    }
+}
+
+.achname{
+    color: rgb(92, 54, 26);
+}
+
+
+
+
+
+
+
+/* Trainings Attended section starts here */
+
+
+
+/* <!-- Achievements main container starts from here  --> */
+.tamaincontainer{
+    position: relative;
+    padding: 0% 0% 3% 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: rgb(227, 218, 218); */
+    border: 1px solid rgb(4, 17, 10);
+    border-top: 0px;
+}
+
+.tamaincontainer::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(227, 218, 218); */
+    background: rgb(227, 218, 218) url("../images/training.jpg") no-repeat 0 25%;
+    opacity: 0.2;
+    z-index: -1;
+    background-size: cover;
+    
+}
+
+
+/* <!-- heading tag for trainings attended --> */
+.trainingsattendedhead{
+    margin: 0;
+    padding: 6% 0% 5% 0%;
+    text-align: center;
+}
+
+/* <!-- tag for training names --> */
+.trainingsname{
+    width:80%;
+    text-align: justify;
+}
+
+
+
+
+
+/* footer starts here  */
+
+
+
+
+
+/* footer section starts here with main footer container  */
+.footer{
+    position: relative;
+    padding: 0% 0% 4% 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: rgb(227, 218, 218); */
+}
+
+.footer::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(227, 218, 218); */
+    background: rgb(227, 218, 218) url("../images/suggestions.jpg") no-repeat ;
+    opacity: 0.2;
+    z-index: -1;
+    background-size: cover;
+    
+}
+
+
+
+/* suggestion main container starts here  */
+.suggestioncontainer{
+    padding: 0% 0% 2% 0%;
+    display: flex;
+    flex-direction: column;
+    width:90%;
+}
+
+/* suggestion 1st sub container starts here  */
+.suggestion1stsubcont{
+    padding: 0% 0% 2% 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+}
+
+.suggestion1stsubcont label{
+    padding: 0.5% 0% 0.5% 0%;
+    font-weight: bold;
+    width:50%;
+}
+
+.suggestion1stsubcont input{
+    padding: 0.5% 0% 0.5% 0%;
+    font-weight: bold;
+    width:50%;
+}
+
+.suggestion1stsubcont textarea{
+    padding: 0.5% 0% 0.5% 0%;
+    font-weight: bold;
+    width:50%;
+    height:8%;
+}
+
+.suggestion1stsubcont button{
+    font-size: 1em;
+    margin: 1% 0% 1% 0%;
+    font-weight: bold;
+    width:50%;
+    box-shadow: 3px 3px 1px 1px rgb(198, 149, 98); 
+}
+
+
+
+
+@media only screen and (max-width:850px){
+    /* flex box for social presence */
+    .socialpresence{
+        padding: 0.5% 0% 0.5% 0%;
+        display: flex;
+        justify-content: space-evenly;
+        width: 90%;
+    }
+
+    /* .socialpresenceitems{
+        width: 25%;
+        
+    }  */
+
+
+    /* css for social presence items images */
+    .socialpresenceitems img{
+        margin: auto;
+        display: block;
+        width: 25%;
+        border-radius: 15%;
+        box-shadow: 3px 3px 1px 1px rgb(198, 149, 98); 
+        
+    } 
+}
+
+
+
+
+@media only screen and (min-width:851px){
+    /* flex box for social presence */
+    .socialpresence{
+        padding: 0.5% 0% 0.5% 0%;
+        display: flex;
+        justify-content: space-evenly;
+        width: 60%;
+    }
+
+    /* .socialpresenceitems{
+        width: 25%;
+        
+    }  */
+
+
+    /* css for social presence items images */
+    .socialpresenceitems img{
+        margin: auto;
+        display: block;
+        width: 18%;
+        border-radius: 15%;
+        box-shadow: 3px 3px 1px 1px rgb(198, 149, 98); 
+        
+    } 
+}
+
+
+
+/* copyright footer section */
+.copyrightfootercontainer{
+    color: blue;
+    margin: 5% 0% 0% 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.copyrightfooter{
+    margin: 0;
+    padding: 0;
+}
+
+.designedby{
+    margin: 0;
+    padding: 0;
+}
+
+
