@@ -1112,6 +1112,7 @@ body{
     .trainingsname{
         width:80%;
         text-align: justify;
+        font-size: 1em;
     }
 }
 
@@ -1145,6 +1146,13 @@ body{
     z-index: -1;
     background-size: cover;
     
+}
+
+
+.footerfeedbackhead{
+    margin: 0;
+    padding: 6% 0% 5% 0%;
+    text-align: center;
 }
 
 
