@@ -248,11 +248,12 @@ body{
 .info{
     display: flex;
     width:100%;
+    padding: 0 0 0 1%;
 }
 /* division of flexitemforinfo */
 .flexitemforinfo{
     width:150%;
-    margin:1% 1% 0% 1%;
+    margin:1% 1.5% 0% 1.5%;
 }
 @media only screen and (max-width:900px)
 {
@@ -276,7 +277,7 @@ body{
 /* tag for name */
 .nameTag{
     display: inline-block ;
-    margin: 0;
+    margin:0 0 0 0.5%;
 }
 
 /* detail section under info */
@@ -292,6 +293,18 @@ body{
     margin: 1%;
     text-align: justify;
     font-weight: 500;
+}
+
+@media only screen and (max-width:500px){
+    .objective{
+        font-size: 0.8em;
+    }
+}
+
+@media only screen and (min-width:501px){
+    .objective{
+        font-size: 1em;
+    }
 }
 
 /* quote in image format */
@@ -340,6 +353,8 @@ body{
     border: 1px solid rgb(4, 17, 10);
 }
 
+
+
 /* backgroud image in experience container and its opacity  */
 .expcontainer::before{
     content: "";
@@ -368,16 +383,44 @@ body{
 }
 
 /* <!-- experience duration sections --> */
-.expduration{
-    min-width:10%;
-    /* background-color: rgb(227, 218, 218); */
-    text-align: center;
+
+
+@media only screen and (max-width:500px){
+    /* <!-- experience duration sections --> */
+    .expduration{
+        min-width:10%;
+        padding:1em 0.2em 0em 0.5em;
+        /* background-color: rgb(227, 218, 218); */
+        text-align: center;
+    }
+    /* <!-- experience information for duration1 --> */
+    .expinfo{
+        
+        padding: 0 0.5em 0.3em 0.5em;
+    }
+    .expcontainer{
+        font-size: 0.8em;
+    }
 }
 
-/* <!-- experience information for duration1 --> */
-.expinfo{
-    padding: 0 0.5em 0.3em 0.5em;
+@media only screen and (min-width:501px){
+    /* <!-- experience duration sections --> */
+    .expduration{
+        min-width:10%;
+        /* background-color: rgb(227, 218, 218); */
+        text-align: center;
+    }
+    /* <!-- experience information for duration1 --> */
+    .expinfo{
+        padding: 0 0.5em 0.3em 0.5em;
+    }
+    .expcontainer{
+        font-size: 1em;
+    }
 }
+
+
+
 
 /* <!-- tag for company name --> */
 .companyname{
@@ -731,6 +774,22 @@ body{
     width: 68%;
     padding: 0.1em 3.5em 0.1em 1.5em;
     text-align: justify;
+}
+
+@media only screen and (max-width:500px){
+    /* css for education detail section */
+    .educol2container{
+        font-size: 0.8em;
+    }
+    
+}
+
+@media only screen and (min-width:501px){
+    /* css for education detail section */
+    .educol2container{
+        font-size: 1em;
+    }
+    
 }
 
 /* css for value of passing year */
