@@ -266,9 +266,13 @@ body{
 
     /* division of flexitemforquotes */
     .flexitemforquotes{
-    width:100%;
-    display: none;
-}
+        width:100%;
+        display: none;
+    }
+    /* detail section under info */
+    .contact{
+        font-size: 0.9em;
+    }
 }
 
 @media only screen and (min-width:901px)
@@ -278,11 +282,11 @@ body{
     }
 
     .flexitemforquotes{
-    width:100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 }
 
 /* tag for name */
@@ -308,7 +312,7 @@ body{
 
 @media only screen and (max-width:500px){
     .objective{
-        font-size: 0.8em;
+        font-size: 0.9em;
     }
 }
 
