@@ -930,7 +930,10 @@ body{
     }
 }
 
-
+.sciencefairdetailsh3{
+    font-weight: 900;
+    color: rgb(3, 2, 90);
+}
 
 .sciencefairdetailsh2{
     text-align: center;
