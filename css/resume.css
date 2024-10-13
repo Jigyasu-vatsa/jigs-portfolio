@@ -31,20 +31,42 @@ body{
     border-radius: 5%;
 }
 
-/* text to animation*/
-.texttoanimate{
-    padding: 0.1em 0 0.1em 0;
-    color: red;
-    width: 100%;
-    font-size: 1em;
-    margin: 0;
-    animation: textAnimation 12s linear 0s reverse infinite;
+@media only screen and (max-width:650px){
+
+    /* text to animation*/
+    .texttoanimate{
+        padding: 0.1em 0 0.1em 0;
+        color: red;
+        width: 100%;
+        font-size: 0.8em;
+        margin: 0;
+        animation: textAnimation 12s linear 0s reverse infinite;
+    }
+
+
+    @keyframes textAnimation {
+        0%{transform: translateX(-55%);}
+        100%{transform: translateX(100%);}
+    }
 }
 
+@media only screen and (min-width:651px){
 
-@keyframes textAnimation {
-    0%{transform: translateX(-35%);}
-    100%{transform: translateX(100%);}
+    /* text to animation*/
+    .texttoanimate{
+        padding: 0.1em 0 0.1em 0;
+        color: red;
+        width: 100%;
+        font-size: 1em;
+        margin: 0;
+        animation: textAnimation 12s linear 0s reverse infinite;
+    }
+
+
+    @keyframes textAnimation {
+        0%{transform: translateX(-35%);}
+        100%{transform: translateX(100%);}
+    }
 }
 
 
@@ -949,11 +971,13 @@ body{
     }
 }
 
-.achname{
+.achspan{
     color: rgb(92, 54, 26);
 }
 
-
+.achname{
+    text-align: center;
+}
 
 
 
