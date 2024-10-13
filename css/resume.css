@@ -31,16 +31,22 @@ body{
     border-radius: 5%;
 }
 
+/* text to animation*/
+.texttoanimate{
+    padding: 0.1em 0 0.1em 0;
+    color: rgb(255, 0, 0);
+    width: 100%;
+    font-weight:bolder;
+    margin: 0;
+    animation: textAnimation 12s linear 0s reverse infinite;
+    text-shadow:0.2em 0.2em 0.2em rgb(255, 255, 0);
+}
+
 @media only screen and (max-width:650px){
 
     /* text to animation*/
     .texttoanimate{
-        padding: 0.1em 0 0.1em 0;
-        color: red;
-        width: 100%;
         font-size: 0.8em;
-        margin: 0;
-        animation: textAnimation 12s linear 0s reverse infinite;
     }
 
 
@@ -54,12 +60,7 @@ body{
 
     /* text to animation*/
     .texttoanimate{
-        padding: 0.1em 0 0.1em 0;
-        color: red;
-        width: 100%;
         font-size: 1em;
-        margin: 0;
-        animation: textAnimation 12s linear 0s reverse infinite;
     }
 
 
