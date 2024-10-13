@@ -20,6 +20,33 @@ body{
 }
 
 
+/* text animation container */
+.textanimationcontainer{
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: rgb(227, 218, 218);
+    box-shadow: 0.3em 0.3em 0.2em 0.2em rgb(153, 153, 181);
+    border-radius: 5%;
+}
+
+/* text to animation*/
+.texttoanimate{
+    padding: 0.1em 0 0.1em 0;
+    color: red;
+    width: 100%;
+    font-size: 1em;
+    margin: 0;
+    animation: textAnimation 12s linear 0s reverse infinite;
+}
+
+
+@keyframes textAnimation {
+    0%{transform: translateX(-35%);}
+    100%{transform: translateX(100%);}
+}
+
 
 /* horizontal navbar */
 
@@ -849,22 +876,41 @@ body{
     width: 60%;
 }
 
-/* flex container to display two marquee in one line  */
-.achsciencefairmarqueecontainer{
-    display: flex;
-    width: 70%;
-    justify-content: space-evenly;
 
+@media only screen and (max-width:800px){
+    
+    /* flex container to display two marquee in one line  */
+    .achsciencefairmarqueecontainer{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        align-items: center;
+
+    }
+    .achsciencefairmarquee{
+        padding: 0;
+        margin: 0;
+        width: 75%;
+    }
 }
 
-.achsciencefairmarquee{
-    width: 35%;
 
+@media only screen and (min-width:801px){
+    /* flex container to display two marquee in one line  */
+    .achsciencefairmarqueecontainer{
+        display: flex;
+        width: 90%;
+        justify-content: space-evenly;
+
+    }
+    .achsciencefairmarquee{
+        width: 35%;
+    }
 }
 
 
 
-.sciencefairdetailsh3{
+.sciencefairdetailsh2{
     text-align: center;
     margin: 0.2em;
     font-weight: 900;
@@ -892,7 +938,7 @@ body{
 
 @media only screen and (max-width:799px){
     .achkvsmarquee{
-        width: 75%;
+        width: 70%;
     }
 }
 
