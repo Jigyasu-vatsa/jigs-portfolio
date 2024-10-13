@@ -261,7 +261,7 @@ body{
         padding: 1% 0 1% 1%;
     }
     .flexitemforinfo{
-        padding: 1% 0 1% 0;
+        padding: 2% 0 3% 0;
     }
 
     /* division of flexitemforquotes */
@@ -318,7 +318,7 @@ body{
 
 @media only screen and (min-width:501px){
     .objective{
-        font-size: 1em;
+        font-size: 1.1em;
     }
 }
 
