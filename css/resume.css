@@ -850,7 +850,7 @@ body{
     /* css for education download section in head */
     .educol3containerhead{
     min-width: 9%;
-    width: 13%;
+    width: 18%;
     }
 
     /* css for education download section */
@@ -859,7 +859,7 @@ body{
         flex-direction: column;
         justify-content: space-evenly;
         min-width: 9%;
-        width: 13%;
+        width: 18%;
         height: 5em;
     }
 }
