@@ -428,10 +428,10 @@ body{
     /* <!-- experience information for duration1 --> */
     .expinfo{
         padding: 0 0.5em 0.3em 0.5em;
-        font-size: 1em;
+        /* font-size: 0.8em; */
     }
     .expcontainer{
-        font-size: 1em;
+        font-size: 0.9em;
     }
 }
 
