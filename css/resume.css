@@ -426,6 +426,8 @@ body{
     }
     /* <!-- experience information for duration1 --> */
     .expinfo{
+        min-width: 78%;
+        width: 80%;
         padding: 0 0.5em 0.3em 0.5em;
         font-size: 1em;
     }
