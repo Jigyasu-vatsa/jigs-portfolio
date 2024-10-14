@@ -385,6 +385,7 @@ body{
 
 /* <!-- heading tag for experience --> */
 .expheading{
+    font-size: 2em;
     margin: 1em 0 0 0;
     padding: 6% 0 4% 0;
     text-align: center;
@@ -426,8 +427,6 @@ body{
     }
     /* <!-- experience information for duration1 --> */
     .expinfo{
-        min-width: 78%;
-        width: 80%;
         padding: 0 0.5em 0.3em 0.5em;
         font-size: 1em;
     }
@@ -850,7 +849,7 @@ body{
     /* css for education download section in head */
     .educol3containerhead{
     min-width: 9%;
-    width: 18%;
+    width: 13%;
     }
 
     /* css for education download section */
@@ -859,7 +858,7 @@ body{
         flex-direction: column;
         justify-content: space-evenly;
         min-width: 9%;
-        width: 18%;
+        width: 13%;
         height: 5em;
     }
 }
