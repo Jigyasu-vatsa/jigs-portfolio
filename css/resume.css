@@ -1170,6 +1170,10 @@ body{
     }
 }
 
+.trainingsname a{
+    text-decoration-line:none;
+}
+
 
 
 
