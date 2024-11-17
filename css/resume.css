@@ -1154,7 +1154,7 @@ body{
     /* <!-- tag for training names --> */
     .trainingsname{
         width:80%;
-        text-align: justify;
+        text-align:left;
         font-size: 0.9em;
         font-weight: normal;
     }
