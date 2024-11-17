@@ -1075,6 +1075,7 @@ body{
     border-top: 0px;
 }
 
+
 .tamaincontainer::before{
     content: "";
     position: absolute;
@@ -1087,6 +1088,59 @@ body{
     background-size: cover;
     
 }
+
+
+
+@media only screen and (max-width:900px){
+    .tacertification{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-width:95%;
+    }
+
+    .certifications, .trainingattended{
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        align-items: center;
+    
+        .tacontent{
+            display: flex;
+            flex-direction: column;
+            width:100%;
+            padding: 0.5em 0 0.5em 2em;
+        }
+    }
+
+}
+
+@media only screen and (min-width:901px){
+    .tacertification{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+        width:90%;
+    }
+
+    .certifications, .trainingattended{
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+        align-items: center;
+    
+        .tacontent{
+            display: flex;
+            flex-direction: column;
+            width:100%;
+            padding:0 0 0 2em;
+        }
+    }
+   
+}
+
+
+
 
 
 /* <!-- heading tag for trainings attended --> */
