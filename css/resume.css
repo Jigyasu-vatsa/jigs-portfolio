@@ -406,8 +406,9 @@ body{
     /* <!-- experience duration sections --> */
     .expduration{
         min-width:10%;
-        padding:1em 0.4em 0em 0.4em;
+        padding:0 0.5em 0em 0.6em;
         text-align: center;
+        font-size: 0.8em;
     }
     /* <!-- experience information for duration1 --> */
     .expinfo{
@@ -417,6 +418,30 @@ body{
         font-size: 0.8em;
     }
     
+
+    /* Read More */
+    .expreadmore{
+        display:inline;
+        cursor: pointer;
+        background-color:coral;
+        padding: 0 0.5em 0 0.5em;
+    }
+
+    .expreadmore:hover{
+        background-color: chartreuse;
+        .expreadmorecontent{
+            display: inline;
+        }
+    }   
+
+    .expreadmorecontent{
+        display: none;
+    }
+
+    .expreadmorecontent.showMe{
+        display:inline;
+    }
+
 }
 
 @media only screen and (min-width:501px){
@@ -430,8 +455,17 @@ body{
         padding: 0 0.5em 0.3em 0.5em;
         font-size: 1em;
     }
-}
 
+        /* Read More */
+        .expreadmore{
+            display:none;
+        }
+    
+        .expreadmorecontent{
+            display: inline;
+        }
+
+}
 
 
 
@@ -1372,3 +1406,29 @@ body{
 }
 
 
+
+
+
+ /* Floating cursor for move to top  */
+
+
+#myBtn {
+    display:block;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 99;
+      font-size: 18px;
+      border: none;
+      outline: none;
+      background-color:white;
+      color: white;
+      cursor: pointer;
+      border-radius: 10px;
+      
+    }
+    
+    #myBtn:hover {
+      background-color: #555;
+    }
+    
