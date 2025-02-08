@@ -6,12 +6,16 @@
     <title>Jig's RESUME</title>
     <link rel="shortcut icon" href="images/JVlogo.jpg" type="image/x-icon">
     <link rel="stylesheet" href="css/resume.css">
+    
+    <script src="js/bottom_top_scroll.js"></script>
+    
 <style>
 
 
 </style>
 
 </head>
+
 <body>
     <!-- /* head as RESUME */ -->
     <h1 class="resumehead">PORTFOLIO<img src="images/JVlogo.jpg" alt="logo" class="jvlogo"></h1>
@@ -110,7 +114,7 @@
                 <h3 class="designation">JR. SOFTWARE ENGINEER INTERN TRAINEE</h3>
                 
                 <!-- tag for experience description -->
-                <h3 class="expdescription">Developing and maintaining web and mobile applications data for ticket booking, inquiry, and other railway services to enhance user experience through regular updates and feature additions by integrating new technologies and third-party services to improve efficiency of services and functionality.
+                <h3 class="expdescription">Developing and maintaining web and mobile applications data for ticket booking, inquiry, and other railway services to enha<div class="expreadmore" id="exprdmore">Know More</div> <div class="expreadmorecontent" id="expreadmorecntnt">nce user experience through regular updates and feature additions by integrating new technologies and third-party services to improve efficiency of services and functionality.</div>
                 <!-- option to download respective certificate -->
                 <a href="#" class="expcertificatedownload">CERTIFICATE &darr;</a>
                 </h3>
@@ -137,7 +141,7 @@
                 <h3 class="designation">JR. DATABASE ENGINEER INTERN TRAINEE</h3>
                 
                 <!-- tag for experience description -->
-                <h3 class="expdescription">Continuous monitoring of database record and assessment of the frequential modifications impact for integration of external data sources for deeper insights by automation frameworks and monitoring utilities with the help of sprint planning for development during staging, testing, and production deployment phases.
+                <h3 class="expdescription">Continuous monitoring of database record and assessment of the frequential modifications impact for integration of exter<div class="expreadmore" id="exprdmore1">Know More</div> <div class="expreadmorecontent" id="expreadmorecntnt1">nal data sources for deeper insights by automation frameworks and monitoring utilities with the help of sprint planning for development during staging, testing, and production deployment phases.</div> 
                 <!-- option to download respective certificate -->
                 <a href="#" class="expcertificatedownload">CERTIFICATE &darr;</a>
                 </h3>
@@ -164,7 +168,7 @@
                 <h3 class="designation">SOFTWARE ENGINEER INTERN TRAINEE</h3>
                 
                 <!-- tag for experience descrityion -->
-                <h3 class="expdescription">Working with the coordination of development teams for providing techno solutions to the customers. Trained and supervised by experienced technical engineers to assist them on ongoing projects with insight assessment of different types of data from several databases in daily operations and customer service. 
+                <h3 class="expdescription">Working with the coordination of development teams for providing techno solutions to the customers. Trained and super<div class="expreadmore" id="exprdmore2">Know More</div> <div class="expreadmorecontent" id="expreadmorecntnt2">vised by experienced technical engineers to assist them on ongoing projects with insight assessment of different types of data from several databases in daily operations and customer service.</div> 
                 <!-- option to download respective certificate -->
                 <a href="#" class="expcertificatedownload">CERTIFICATE &darr;</a>
                 </h3>
@@ -587,7 +591,7 @@
         </div>
 
         <!-- kvs captain achievements container -->
-         <div class="achkvsall">
+        <div class="achkvsall">
 
             <!-- kvs dbg school captain section  -->
             <div class="achkvsschoolcapt">
@@ -610,7 +614,7 @@
                 <h3 class="achname">HOUSE CAPTAIN</h3>
             </div>
 
-         </div>
+        </div>
 
 
     </div>
@@ -713,6 +717,25 @@
 
 
     </div>
+
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="images/top_move_up.jpg" alt="Move Up" width="25" height="40"></button>
+
+    <!-- <script>
+    // Experience section KnowMore Script
+
+    document.getElementById("exprdmore").addEventListener("click",myreadmorefunc);
+    
+    function myreadmorefunc()
+    {
+        document.getElementById ("expreadmorecntnt").classList.toggle('showMe');
+        
+        document.getElementById("exprdmore").style.display="none";
+    
+    }
+    </script> -->
+    
+    <script src="js/resume.js"></script>
 
 </body>
 </html>
