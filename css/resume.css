@@ -424,7 +424,10 @@ body{
         display:inline;
         cursor: pointer;
         background-color:coral;
-        padding: 0 0.5em 0 0.5em;
+        margin: 0 0 0 0.05em;
+        padding: 0 0.1em 0 0.1em;
+        border-radius: 15%;
+        border:0.05em dotted black;
     }
 
     .expreadmore:hover{
