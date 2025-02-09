@@ -36,6 +36,35 @@ function myreadmorefunc2()
 
 
 
+// Experience section KnowMore Script
+
+document.getElementById("exprdmore4").addEventListener("click",myreadmorefunc4);
+
+function myreadmorefunc4()
+{
+    document.getElementById ("expreadmorecntnt4").classList.toggle('showMe');
+    
+    document.getElementById("exprdmore4").style.display="none";
+
+}
+
+
+
+
+
+// Experience section KnowMore Script
+
+document.getElementById("exprdmore5").addEventListener("click",myreadmorefunc5);
+
+function myreadmorefunc5()
+{
+    document.getElementById ("expreadmorecntnt5").classList.toggle('showMe');
+    
+    document.getElementById("exprdmore5").style.display="none";
+
+}
+
+
 
 
 
