@@ -273,6 +273,12 @@ body{
     .contact{
         font-size: 0.9em;
     }
+
+    /* linkedin link beautyfication based on pc and mob view  */
+    .linkedinpc{
+        display: none;
+    }
+
 }
 
 @media only screen and (min-width:901px)
@@ -287,6 +293,12 @@ body{
         flex-direction: column;
         justify-content: space-between;
     }
+
+    /* linkedin link beautyfication based on pc and mob view  */
+    .linkedinmob{
+        display: none;
+    }
+
 }
 
 /* tag for name */
