@@ -274,10 +274,11 @@ body{
         font-size: 0.9em;
     }
 
-    /* linkedin link beautyfication based on pc and mob view  */
-    .linkedinpc{
-        display: none;
+    /* beautyfication based on pc and mob view  */
+    .extramobview{
+        font-size: 0.75em;
     }
+
 
 }
 
@@ -292,11 +293,6 @@ body{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-    }
-
-    /* linkedin link beautyfication based on pc and mob view  */
-    .linkedinmob{
-        display: none;
     }
 
 }
