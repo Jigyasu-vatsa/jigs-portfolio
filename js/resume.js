@@ -1,17 +1,5 @@
 // Experience section KnowMore Script
 
-document.getElementById("exprdmore").addEventListener("click",myreadmorefunc);
-
-function myreadmorefunc()
-{
-    document.getElementById ("expreadmorecntnt").classList.toggle('showMe');
-    
-    document.getElementById("exprdmore").style.display="none";
-
-}
-
-// Experience section KnowMore Script
-
 document.getElementById("exprdmore1").addEventListener("click",myreadmorefunc1);
 
 function myreadmorefunc1()
@@ -34,7 +22,17 @@ function myreadmorefunc2()
 
 }
 
+// Experience section KnowMore Script
 
+document.getElementById("exprdmore3").addEventListener("click",myreadmorefunc3);
+
+function myreadmorefunc3()
+{
+    document.getElementById ("expreadmorecntnt3").classList.toggle('showMe');
+    
+    document.getElementById("exprdmore3").style.display="none";
+
+}
 
 // Experience section KnowMore Script
 
