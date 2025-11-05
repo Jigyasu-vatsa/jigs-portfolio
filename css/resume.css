@@ -261,7 +261,7 @@ html, body{
 @media only screen and (max-width:900px)
 {
     .info{
-        padding: 1% 0 1% 1%;
+        padding: 0%;
     }
     .flexitemforinfo{
         padding: 2% 0 3% 0;
@@ -1150,14 +1150,15 @@ html, body{
     .certifications, .trainingattended{
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 96%;
         align-items: center;
+        padding:2%;
     
         .tacontent{
             display: flex;
             flex-direction: column;
             width:100%;
-            padding: 0.5em 0.5em 0.5em 2em;
+            /*padding: 0.5em 0.5em 0.5em 2em;*/
         }
     }
 
@@ -1447,6 +1448,7 @@ html, body{
       background-color: #555;
     }
     
+
 
 
 
