@@ -5,7 +5,7 @@ html, body{
 }
 
 *{
-    outline: 2px solid red;
+    /*outline: 2px solid red;*/
 }
  /* company logo as jvlogo   */
 .jvlogo{
@@ -1448,6 +1448,7 @@ html, body{
       background-color: #555;
     }
     
+
 
 
 
