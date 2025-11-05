@@ -1280,19 +1280,19 @@ body{
 @media only screen and (max-width:650px){
     .suggestion1stsubcont label{
         padding: 0.5% 0% 0.5% 0%;
-        font-weight: bold;
+        /*font-weight: bold;*/
         width:70%;
     }
 
     .suggestion1stsubcont input{
         padding: 0.5% 0% 0.5% 0%;
-        font-weight: bold;
+        /*font-weight: bold;*/
         width:70%;
     }
 
     .suggestion1stsubcont textarea{
         padding: 0.5% 0% 0.5% 0%;
-        font-weight: bold;
+        /*font-weight: bold;*/
         width:70%;
         height:8%;
     }
@@ -1300,7 +1300,7 @@ body{
     .suggestion1stsubcont button{
         font-size: 1em;
         margin: 1% 0% 1% 0%;
-        font-weight: bold;
+        /*font-weight: bold;*/
         width:70%;
         box-shadow: 3px 3px 1px 1px rgb(198, 149, 98); 
     }
@@ -1402,6 +1402,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 .copyrightfooter{
@@ -1443,3 +1444,4 @@ body{
       background-color: #555;
     }
     
+
