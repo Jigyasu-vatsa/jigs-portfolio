@@ -64,7 +64,7 @@ function myreadmorefunc5()
 
 // Experience section KnowMore Script
 
-document.getElementById("exprdmore6").addEventListener("click",myreadmorefunc4);
+document.getElementById("exprdmore6").addEventListener("click",myreadmorefunc6);
 
 function myreadmorefunc6()
 {
@@ -100,5 +100,6 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
 
 
