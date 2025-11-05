@@ -4,6 +4,9 @@ html, body{
     padding: 0% 0% 0% 0%;
 }
 
+*{
+    outline: 2px solid red;
+}
  /* company logo as jvlogo   */
 .jvlogo{
     width:1.55em;
@@ -1444,5 +1447,6 @@ html, body{
       background-color: #555;
     }
     
+
 
 
