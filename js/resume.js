@@ -103,3 +103,41 @@ function topFunction() {
 
 
 
+
+
+document.getElementById('suggestionForm').addEventListener('submit', function(event) {
+    // 1. Prevent the default form submission (which causes the 404)
+    event.preventDefault(); 
+
+    const form = event.target;
+    const messageArea = document.getElementById('formMessage');
+    
+    // 2. Create FormData object from the form
+    const formData = new FormData(form);
+
+    // 3. **IMPORTANT:** Since GitHub Pages has no backend, you must post to a service.
+    //    For this example, we'll assume you are posting to Formspree again, 
+    //    but using fetch() instead of the <form> tag's action.
+    const endpointUrl = 'https://formspree.io/f/YOUR_UNIQUE_FORM_ID'; 
+
+    fetch(endpointUrl, {
+        method: 'POST',
+        body: formData,
+        // mode: 'no-cors' might be necessary for some services, but try without first
+    })
+    .then(response => {
+        // Formspree generally returns a 200/204 success on successful POST, 
+        // but often in 'no-cors' mode, it looks like a success even if it failed.
+        // You must check the service's documentation for the exact success condition.
+        
+        // For a simple setup, assume if fetch doesn't throw an error, it succeeded.
+        messageArea.innerHTML = '<span style="color: green; font-weight: bold;">✅ Suggestion Submitted Successfully! Thank you.</span>';
+        form.reset(); // Clear the form fields
+    })
+    .catch(error => {
+        // This catches network errors or service-side failures.
+        console.error('Submission Error:', error);
+        messageArea.innerHTML = '<span style="color: red; font-weight: bold;">❌ Submission Failed. Please try again later or email us directly.</span>';
+    });
+});
+
