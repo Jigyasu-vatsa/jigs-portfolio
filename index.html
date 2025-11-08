@@ -974,24 +974,24 @@
 
         <!-- suggestion main container starts here -->
         <div class="suggestioncontainer">
-            
-            <form action="/actionaddedsoon" class="suggestion1stsubcont">
+            <form id="suggestionForm" class="suggestion1stsubcont">
                 <label for="suggestermail">Enter Your Mail:</label>
-                <input type="email" name="suggestermail" id="suggestermail" placeholder="abc@domain.com">
-                                
+                <input type="email" name="suggestermail" id="suggestermail" placeholder="jigyasu@domain.com">
+                    
                 <label for="name">Your Full Name:</label>
-                <input type="text" id="name" placeholder="Jigyasu Vatsa">
-
+                <input type="text" name="name" id="name" placeholder="Jigyasu Vatsa">
+        
                 <label for="suggestedcontent">Your Valuable Suggestions:</label>
                 <textarea name="suggestedcontent" id="suggestedcontent" placeholder="Please write down your suggestions here:"></textarea>
-
+        
                 <label for="designation">Your Designation With Company:</label>
-                <input type="text" id="name" placeholder="Designation @ CompanyName">
-            
+                <input type="text" name="designation" id="designationInput" placeholder="Designation @ CompanyName">
+                
                 <button type="submit">Submit Your Valuable Suggestion</button>
-            
+                
+                <div id="formMessage" style="margin-top: 15px;"></div> 
+                
             </form>
-            
         </div>
 
 
