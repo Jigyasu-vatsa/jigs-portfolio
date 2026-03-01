@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jig's RESUME</title>
+    <title>Jigyasu Vatsa</title>
     <link rel="shortcut icon" href="images/JVlogo.jpg" type="image/x-icon">
     <link rel="stylesheet" href="css/resume.css">
     
@@ -11,6 +11,16 @@
     
 <style>
 
+    @media (min-width: 401px){
+        .displaybelow400px{
+            display: none;
+        }
+    }
+    @media (max-width: 400px){
+        .displayabove400px{
+            display: none;
+        }
+    }
 
 </style>
 
@@ -18,7 +28,7 @@
 
 <body>
     <!-- /* head as RESUME */ -->
-    <h1 class="resumehead">PORTFOLIO<img src="images/JVlogo.jpg" alt="logo" class="jvlogo"></h1>
+    <h1 class="resumehead">PORTFOLIO<a href="https://www.jigsy.in/" target="_blank"><img src="images/JVlogo.jpg" alt="logo" class="jvlogo" style="border-radius:50%;"></a></h1>
 
 
     <!-- Horizontal hnav section -->
@@ -27,7 +37,16 @@
         <ul class="hnavbar">
             
             <!-- hnavitems as Menu items -->
-            <li class="hnavitems"><a href="#experience">Experience</a></li>
+            <li class="hnavitems dropdown">
+				<a href="#experience" class="dropbtn">Experience ▾</a>
+				<div class="dropdown-content">
+					<a href="#experience" onclick="filterExperience('default')">Industrial + Internship</a>
+					<a href="#experience" onclick="filterExperience('all')">All</a>
+					<a href="#experience" onclick="filterExperience('industrial')">Industrial</a>
+					<a href="#experience" onclick="filterExperience('internship')">Internships</a>
+					<a href="#experience" onclick="filterExperience('teaching')">Teaching / Academic</a>
+				</div>
+			</li>
             <li class="hnavitems"><a href="#projects">Project</a></li>
             <li class="hnavitems"><a href="#skills">Skill</a></li>
             <li class="hnavitems"><a href="#educations">Education</a></li>
@@ -60,19 +79,23 @@
             <div class="flexitemforinfo">
                 <!-- /* tag for name */ -->
                 <h1 class="nameTag">JIGYASU VATSA</h1>
-                <h3 class="contact">B.Tech || CSE'25</h3>
-                <h3 class="contact">Bachelors Of Technology</h3>
+                <h3 class="contact">M.Tech || CSE'27</h3>
+                <h3 class="contact">Masters Of Technology</h3>
                 <h3 class="contact">Computer Science & Engineering</h3>
-                <h4 class="contact extramobview">( Add on Artificial Inteliigence & Machine Learning )</h4>
-                <h3 class="contact extramobview">Linkedin: <a href="https://www.linkedin.com/in/jigyasu-vatsa-785677259/"> https://www.linkedin.com/in/jigyasu-vatsa/</a></h3>
+                <h4 class="contact extramobview">(B.Tech - CSE with add on Artificial Inteliigence & Machine Learning )</h4>
+                <h3 class="contact extramobview">Linkedin: <a href="https://www.linkedin.com/in/jigyasu-vatsa-785677259/" target="_blank"> https://www.linkedin.com/in/jigyasu-vatsa/</a></h3>
                 
-                <h3 class="contact">Mob: <a href="tel:+919431400022" class="phone">+919431400022</a> || <a href="mailto:jigyasu.vatsa@gmail.com" class="mail">jigyasu.vatsa@gmail.com</a> || <a href="https://jigyasu-vatsa.github.io/jigs-portfolio/" target="_blank" class="resumeL">#jigs.com</a></h3>
+                <h3 class="contact">Mob: <a href="tel:+919431400022" class="phone">+919431400022</a> || <a href="mailto:jigyasu.vatsa@gmail.com" class="mail">jigyasu.vatsa@gmail.com</a> || <a href="https://jigyasu-vatsa.github.io/jigs-portfolio/" target="_blank" class="resumeL displayabove400px">jigyasu.jigsy.in</a></h3>
                 <!-- /* objective section under info */ -->
-                <h3 class="objective">I intent to make a long-term career with professional organizations. Seeking a role in an MNCs where I can upgrade my skills with time and take the company to the next level, I will give my best 
-                effort to reach my goals and objectives to obtain professional level skills.
-                Adaptive ethical interpersonal collaborative commitment to excellence for contributions to the 
-                growth and development of Mankind.
+                <h3 class="objective">I intent to make contribution in worlds digitalization for information on every citizens fingertip with dedication towards professionalism stands with ethics. Making impacts by development and generating employments with my skills, staying updated and taking the world to the next level, I will give my best effort to reach my goals and objectives to continue with professionalism towards humanity.
                 </h3>
+				
+				<h3 class="objective1">I intent to make contribution in worlds digitalization for information on every citizens fingertip with dedication towards professionalism stands with ethics. Making impacts by development and generating employments with my skills, staying updated and taking the world to the next level.
+				<div>Adaptive ethical interpersonal collaborative commitment to excellence for contributions to the growth and development of Mankind.</div>
+                </h3>
+
+                <div style="text-align:center; margin:20px auto auto auto;" class="displaybelow400px "><a href="pdfiles/JigyasuVatsaResume.pdf" target="_blank" class="resumedownloadbtn" style="padding: 5px 5px 5px 8px;">Resume &darr;</a></div>
+                
             </div>
 
             <!-- /* division of flexitemforquotes */ -->
@@ -94,14 +117,14 @@
         <!-- heading tag for experience -->
         <h1 class="expheading" id="experience">EXPERIENCE</h1>
 
-        <!-- experience sub flex container -->
-        <div class="exp">
+        <!-- experience Jigsy India sub flex container 6-->
+        <div class="exp" data-category="industrial">
 
             <!-- experience duration1 -->
             <div class="expduration">
-                <h3>JUL 2023</h3>
+                <h3>SEP 2025</h3>
                 <h6>--</h6>
-                <h3>AUG 2023</h3>
+                <h3> Present </h3>
 
             </div>
 
@@ -110,80 +133,53 @@
                 
                 
                 <!-- tag for company name -->
-                <h3 class="companyname">IRCTC, STATE ENTRY ROAD, NEW DELHI</h3>
+                <h3 class="companyname">JIGSY INDIA</h3>
                 
                 <!-- tag for working designation -->
-                <h3 class="designation">JR. SOFTWARE ENGINEER INTERN TRAINEE</h3>
+                <h3 class="designation">FULL STACK DEVELOPER cum CHAIRPERSON</h3>
                 
                 <!-- tag for experience description -->
-                <h3 class="expdescription">Developing and maintaining web and mobile applications data for ticket booking, inquiry, and other railway servic<button class="expreadmore" id="exprdmore">Know More</button><div class="expreadmorecontent" id="expreadmorecntnt">es to enhance user experience through regular updates and feature additions by integrating new technologies and third-party services to improve efficiency of services and functionality.</div>
+                <h3 class="expdescription">Contributing worlds digitalization ecosystem with ethical professionalism, as well generating employment in <button class="expreadmore" id="exprdmore6">Know More</button><div class="expreadmorecontent" id="expreadmorecntnt6">different sectors including software industry. Working as Full Stack Developer under the sector JIGSY Tech of JIGSY INDIA. For more information visit us @ our official site dedicated for <a href="https://www.jigsy.in/" target="_blank"> JIGYASU INTEGRATED GLOBAL SERVICES PRIVATE LIMITED</a>.</div>
                 <!-- option to download respective certificate -->
-                <a href="pdfiles/IrctcCertificate1MonthJul23.PDF" target="_blank" target="_blank" target="_blank" target="_blank" target="_blank" class="expcertificatedownload">CERTIFICATE &darr;</a>
+                <a href="#pdfiles/JigsyIndia.pdf" target="_blank" class="expcertificatedownload">CERTIFICATE &darr;</a>
                 </h3>
                 
             </div>
         </div>
+		
         
-        <div class="exp">
+        <!-- experience IRCTC DEC24 sub flex container 5-->
+        <div class="exp" data-category="internship">
 
-            <!-- experience duration2 -->
+            <!-- experience duration1 -->
             <div class="expduration">
-                <h3>JAN 2024</h3>
+                <h3>DEC 2024</h3>
                 <h6>--</h6>
-                <h3>APR 2024</h3>
+                <h3>MAY 2025</h3>
+
             </div>
 
-            <!-- experience information for duration2 -->
+            <!-- experience information for duration1 -->
             <div class="expinfo">
-
+                
+                
                 <!-- tag for company name -->
-                <h3 class="companyname">IRCTC, STATE ENTRY ROAD, NEW DELHI</h3>
+                <h3 class="companyname">IRCTC, WORLD TRADE CENTRE, NAUROJI NAGAR, NEW DELHI</h3>
                 
                 <!-- tag for working designation -->
-                <h3 class="designation">JR. DATABASE ENGINEER INTERN TRAINEE</h3>
+                <h3 class="designation">DEVELOPER INTERN TRAINEE</h3>
                 
                 <!-- tag for experience description -->
-                <h3 class="expdescription">Continuous monitoring of database record and assessment of the frequential modifications impact for integration of exter<button class="expreadmore" id="exprdmore1">Know More</button><div class="expreadmorecontent" id="expreadmorecntnt1">nal data sources for deeper insights by automation frameworks and monitoring utilities with the help of sprint planning for development during staging, testing, and production deployment phases.</div> 
+                <h3 class="expdescription">Development and maintenance to enhance user experience through regular updates and feature additions by integrat<button class="expreadmore" id="exprdmore5">Know More</button><div class="expreadmorecontent" id="expreadmorecntnt5">ing new technologies and third-party services to improve efficiency of services and functionalities. Working with DEV Team into internal functionality operations.</div>
                 <!-- option to download respective certificate -->
-                <a href="pdfiles/IrctcCertificate3MonthsJan24.PDF" target="_blank" target="_blank" target="_blank" target="_blank" target="_blank" class="expcertificatedownload">CERTIFICATE &darr;</a>
-                </h3>
-                
-            </div>
-
-        </div>
-        
-        <div class="exp">
-
-            <!-- experience duration3 -->
-            <div class="expduration">
-                <h3>JUN 2024</h3>
-                <h6>--</h6>
-                <h3>AUG 2024</h3>
-            </div>
-
-            <!-- experience information for duration3 -->
-            <div class="expinfo">
-
-                <!-- tag for company name -->
-                <h3 class="companyname">NABENG TECHNO SOLUTIONS PVT LTD, DELHI</h3>
-                
-                <!-- tag for working designation -->
-                <h3 class="designation">SOFTWARE ENGINEER INTERN TRAINEE</h3>
-                
-                <!-- tag for experience descrityion -->
-                <h3 class="expdescription">Working with the coordination of development teams for providing techno solutions to the customers. Trained and super<button class="expreadmore" id="exprdmore2">Know More</button><div class="expreadmorecontent" id="expreadmorecntnt2">vised by experienced technical engineers to assist them on ongoing projects with insight assessment of different types of data from several databases in daily operations and customer service.</div> 
-                <!-- option to download respective certificate -->
-                <a href="pdfiles/CertificateNabengTechnoSolutionsPvtLtdJun24.PDF" target="_blank" target="_blank" target="_blank" target="_blank" target="_blank" class="expcertificatedownload">CERTIFICATE &darr;</a>
+                <a href="pdfiles/IRCTCinternship6MonthsDec24May25.pdf" target="_blank" class="expcertificatedownload">CERTIFICATE &darr;</a>
                 </h3>
                 
             </div>
         </div>
 
-
-
-
-                <!-- experience renuka associates sub flex container -->
-        <div class="exp">
+        <!-- experience renuka associates sub flex container 4-->
+        <div class="exp" data-category="internship">
 
             <!-- experience duration1 -->
             <div class="expduration">
@@ -204,23 +200,77 @@
                 <h3 class="designation">TRAINEE - SOFTWARE DEVELOPER</h3>
                 
                 <!-- tag for experience description -->
-                <h3 class="expdescription">Offer of employment as software developer for Limsys to fix the certain bugs which troubles our clients within the library management software. <button class="expreadmore" id="exprdmore5">Know More</button><div class="expreadmorecontent" id="expreadmorecntnt5">After fixing certain bugs, not accepted the offer letter for employment as trainee developer because I received permission letter to join Irctc.</div>
+                <h3 class="expdescription">Offer of employment as software developer for Limsys to fix the certain bugs which troubles our clients within <button class="expreadmore" id="exprdmore4">Know More</button><div class="expreadmorecontent" id="expreadmorecntnt4">the library management software. After fixing certain bugs, not accepted the offer letter for employment as trainee developer because I received permission letter to join Irctc.</div>
                 <!-- option to download respective certificate -->
-                <a href="pdfiles/RenukaAssociatesOfferLetterJigyasuVatsaNov24.pdf" target="_blank" target="_blank" target="_blank" target="_blank" target="_blank" class="expcertificatedownload">CERTIFICATE &darr;</a>
+                <a href="pdfiles/RenukaAssociatesOfferLetterJigyasuVatsaNov24.pdf" target="_blank" class="expcertificatedownload">CERTIFICATE &darr;</a>
                 </h3>
                 
             </div>
         </div>
 
+        <!-- experience sub flex container 3 -->
+        <div class="exp" data-category="internship">
 
-        <!-- experience IRCTC DEC24 sub flex container -->
-        <div class="exp">
+            <!-- experience duration3 -->
+            <div class="expduration">
+                <h3>JUN 2024</h3>
+                <h6>--</h6>
+                <h3>AUG 2024</h3>
+            </div>
+
+            <!-- experience information for duration3 -->
+            <div class="expinfo">
+
+                <!-- tag for company name -->
+                <h3 class="companyname">NABENG TECHNO SOLUTIONS PVT LTD, DELHI</h3>
+                
+                <!-- tag for working designation -->
+                <h3 class="designation">DATABASE ENGINEER INTERN</h3>
+                
+                <!-- tag for experience descrityion -->
+                <h3 class="expdescription">Working with the coordination of development teams for providing techno solutions to the customers. Trained and <button class="expreadmore" id="exprdmore3">Know More</button><div class="expreadmorecontent" id="expreadmorecntnt3">supervised by experienced technical engineers to assist them on ongoing projects with insight assessment of different types of data from several databases in daily operations and customer service.</div> 
+                <!-- option to download respective certificate -->
+                <a href="pdfiles/CertificateNabengTechnoSolutionsPvtLtdJun24.PDF" target="_blank" class="expcertificatedownload">CERTIFICATE &darr;</a>
+                </h3>
+                
+            </div>
+        </div>
+
+        <!-- experience sub flex container 2 -->
+        <div class="exp" data-category="internship">
+
+            <!-- experience duration2 -->
+            <div class="expduration">
+                <h3>JAN 2024</h3>
+                <h6>--</h6>
+                <h3>APR 2024</h3>
+            </div>
+
+            <!-- experience information for duration2 -->
+            <div class="expinfo">
+
+                <!-- tag for company name -->
+                <h3 class="companyname">IRCTC, STATE ENTRY ROAD, NEW DELHI</h3>
+                
+                <!-- tag for working designation -->
+                <h3 class="designation">DEVELOPER INTERN TRAINEE</h3>
+                
+                <!-- tag for experience description -->
+                <h3 class="expdescription">Continuous monitoring of database record and assessment of the frequential modifications impact for integration of <button class="expreadmore" id="exprdmore2">Know More</button><div class="expreadmorecontent" id="expreadmorecntnt2">external data sources for deeper insights by automation frameworks and monitoring utilities with the help of sprint planning for development during staging, testing, and production deployment phases.</div> 
+                <!-- option to download respective certificate -->
+                <a href="pdfiles/IrctcCertificate3MonthsJan24.PDF" target="_blank" class="expcertificatedownload">CERTIFICATE &darr;</a>
+                </h3>
+            </div>
+        </div>
+        
+        <!-- experience sub flex container 1 -->
+        <div class="exp" data-category="internship">
 
             <!-- experience duration1 -->
             <div class="expduration">
-                <h3>DEC 2024</h3>
+                <h3>JUL 2023</h3>
                 <h6>--</h6>
-                <h3>MM 2025</h3>
+                <h3>AUG 2023</h3>
 
             </div>
 
@@ -229,20 +279,54 @@
                 
                 
                 <!-- tag for company name -->
-                <h3 class="companyname">IRCTC, WORLD TRADE CENTRE, NAUROJI NAGAR, NEW DELHI</h3>
+                <h3 class="companyname">IRCTC, STATE ENTRY ROAD, NEW DELHI</h3>
                 
                 <!-- tag for working designation -->
-                <h3 class="designation">MTS ENGINEER INTERN TRAINEE</h3>
+                <h3 class="designation">JR. SOFTWARE ENGINEER INTERN TRAINEE</h3>
                 
                 <!-- tag for experience description -->
-                <h3 class="expdescription">Associated with development team as multi-tasking intern who can serve as per requirements for multi-<button class="expreadmore" id="exprdmore4">Know More</button><div class="expreadmorecontent" id="expreadmorecntnt4">domains. Integrating coordinations with team members to work on projects. Learning how a Team Leader leads the team. Working! =>Will update more....</div>
+                <h3 class="expdescription">Developing and maintaining web and mobile applications data for ticket booking, inquiry, and other railway <button class="expreadmore" id="exprdmore1">Know More</button><div class="expreadmorecontent" id="expreadmorecntnt1">services to enhance user experience through regular updates and feature additions by integrating new technologies and third-party services to improve efficiency of services and functionality.</div>
                 <!-- option to download respective certificate -->
-                <a href="/pdfiles/JigyasuVatsajoiningletterIRCTCdec24.pdf" target="_blank" target="_blank" target="_blank" target="_blank" target="_blank" class="expcertificatedownload">CERTIFICATE &darr;</a>
+                <a href="pdfiles/IrctcCertificate1MonthJul23.PDF" target="_blank" class="expcertificatedownload">CERTIFICATE &darr;</a>
                 </h3>
                 
             </div>
         </div>
+		
+		<!-- experience Jigsy India sub flex container 6-->
+        <div class="exp" data-category="teaching">
+
+            <!-- experience duration1 -->
+            <div class="expduration">
+                <h3>JAN 2026</h3>
+                <h6>--</h6>
+                <h3> Present </h3>
+
+            </div>
+
+            <!-- experience information for duration1 -->
+            <div class="expinfo">
+                
+                
+                <!-- tag for company name -->
+                <h3 class="companyname">SANDIP UNIVERSITY, MADHUBANI, BIHAR</h3>
+                
+                <!-- tag for working designation -->
+                <h3 class="designation">FACULTY - TEACHING ASSISTANT</h3>
+                
+                <!-- tag for experience description -->
+                <h3 class="expdescription">Responsible for students to get them ready to contribute in industry by providing them complete exposure, how to work, how to integrate different technologies <button class="expreadmore" id="exprdmore7">Know More</button><div class="expreadmorecontent" id="expreadmorecntnt7">to deliver specific requiremnts. Engaged with B.Tech, CSE, 2022-2026 batch for Advanced Technology - II and with 2024-2028 batch for DAA.</div>
+                <!-- option to download respective certificate -->
+                <a href="#pdfiles/SandipUniversity.pdf" target="_blank" class="expcertificatedownload">CERTIFICATE &darr;</a>
+                </h3>
+                
+            </div>
+        </div>
+		
     </div>
+
+
+        
 
     <!-- projects main container -->
     <div class="projectcontainer">
@@ -395,6 +479,187 @@
             </div>
 
         </div>
+        
+
+        <!-- flex column for project 7 -->
+        <div class="project">
+            <div class="projecttitles">
+                Jigs - A Voice Assistant cum Chat Bot for Social Platforms
+            </div>
+
+            <div class="projectwith">
+                UTU, Dehradun
+            </div>
+
+            <div class="psymbol">
+                <img class="projectcomplogo" src="images/utu.png" alt="Uttarakhand Technical University">
+            </div>
+
+            <div class="projectcertfdownload">
+                <a href="#pdfiles/IRCTCinternshipReportSubmission.PDF" target="_blank" class="projectcertificatedownload">&darr;</a>
+            </div>
+
+        </div>
+
+        <!-- flex column for project 8 -->
+        <div class="project">
+            <div class="projecttitles">
+                Importance of Database Management for Service Providing Corporations
+            </div>
+
+            <div class="projectwith">
+                IRCTC
+            </div>
+
+            <div class="psymbol">
+                <img class="projectcomplogo" src="images/IrctcLogo.jpg" alt="IRCTC.jpg">
+            </div>
+
+            <div class="projectcertfdownload">
+                <a href="pdfiles/IRCTCinternship6MonthsDec24May25.pdf" target="_blank" class="projectcertificatedownload">&darr;</a>
+            </div>
+
+        </div>
+
+        <!-- flex column for project 9 -->
+        <div class="project">
+            <div class="projecttitles">
+                Digital Web Presence of JIGSY INDIA
+            </div>
+
+            <div class="projectwith">
+                JIGSY INDIA
+            </div>
+
+            <div class="psymbol">
+                <img class="projectcomplogo" src="images/JigsyLogo.jpg" alt="JIGSY.jpg">
+            </div>
+
+            <div class="projectcertfdownload">
+                <a href="#pdfiles/IRCTCinternshipReportSubmission.PDF" target="_blank" class="projectcertificatedownload">&darr;</a>
+            </div>
+
+        </div>
+
+        <!-- flex column for project 10 -->
+        <div class="project">
+            <div class="projecttitles">
+                Advanced Recruitment Pipeline for JIGSY INDIA
+            </div>
+
+            <div class="projectwith">
+                JIGSY TECH
+            </div>
+
+            <div class="psymbol">
+                <img class="projectcomplogo" src="images/JigsyLogo.jpg" alt="JIGSY.jpg">
+            </div>
+
+            <div class="projectcertfdownload">
+                <a href="#pdfiles/IRCTCinternshipReportSubmission.PDF" target="_blank" class="projectcertificatedownload">&darr;</a>
+            </div>
+
+        </div>
+
+        <!-- flex column for project 11 -->
+        <div class="project">
+            <div class="projecttitles">
+                Employee Management System for JIGSY INDIA
+            </div>
+
+            <div class="projectwith">
+                JIGSY TECH
+            </div>
+
+            <div class="psymbol">
+                <img class="projectcomplogo" src="images/JigsyLogo.jpg" alt="JIGSY.jpg">
+            </div>
+
+            <div class="projectcertfdownload">
+                <a href="#pdfiles/IRCTCinternshipReportSubmission.PDF" target="_blank" class="projectcertificatedownload">&darr;</a>
+            </div>
+
+        </div>
+
+        <!-- flex column for project 12 -->
+        <div class="project">
+            <div class="projecttitles">
+                Administartive Management System for JIGSY INDIA
+            </div>
+
+            <div class="projectwith">
+                JIGSY TECH
+            </div>
+
+            <div class="psymbol">
+                <img class="projectcomplogo" src="images/JigsyLogo.jpg" alt="JIGSY.jpg">
+            </div>
+
+            <div class="projectcertfdownload">
+                <a href="#pdfiles/IRCTCinternshipReportSubmission.PDF" target="_blank" class="projectcertificatedownload">&darr;</a>
+            </div>
+
+        </div>
+
+        <!-- flex column for project 13 -->
+        <div class="project">
+            <div class="projecttitles">
+                Real-Time Personalized Messenger for JIGSY INDIA
+            </div>
+
+            <div class="projectwith">
+                JIGSY TECH
+            </div>
+
+            <div class="psymbol">
+                <img class="projectcomplogo" src="images/JigsyLogo.jpg" alt="JIGSY.jpg">
+            </div>
+
+            <div class="projectcertfdownload">
+                <a href="#pdfiles/IRCTCinternshipReportSubmission.PDF" target="_blank" class="projectcertificatedownload">&darr;</a>
+            </div>
+
+        </div>
+
+        <!-- flex column for project 14 -->
+        <div class="project">
+            <div class="projecttitles">
+                Supoort Cell
+            </div>
+
+            <div class="projectwith">
+                JIGSY TECH
+            </div>
+
+            <div class="psymbol">
+                <img class="projectcomplogo" src="images/JigsyLogo.jpg" alt="JIGSY.jpg">
+            </div>
+
+            <div class="projectcertfdownload">
+                <a href="#pdfiles/IRCTCinternshipReportSubmission.PDF" target="_blank" class="projectcertificatedownload">&darr;</a>
+            </div>
+
+        </div>
+
+        <!-- flex column for project 12 -->
+        <div class="project">
+            <div class="projecttitles">
+                Client Interface for JIGSY INDIA
+            </div>
+
+            <div class="projectwith">
+                JIGSY TECH
+            </div>
+
+            <div class="psymbol">
+                <img class="projectcomplogo" src="images/JigsyLogo.jpg" alt="JIGSY.jpg">
+            </div>
+
+            <div class="projectcertfdownload">
+                <a href="#pdfiles/IRCTCinternshipReportSubmission.PDF" target="_blank" class="projectcertificatedownload">&darr;</a>
+            </div>
+
+        </div>
 
     </div>
 
@@ -420,8 +685,8 @@
 
             <!-- container as skill elements in row -->
             <div class="skillsitems">
-                <img class="skillsimg" src="images/SQL.png" alt="SQL">
-                <h3 class="skillname">SQL</h3>
+                <img class="skillsimg" src="images/flask.png" alt="Flask">
+                <h3 class="skillname">Flask & Django</h3>
             </div>
 
             <!-- container as skill elements in row -->
@@ -516,6 +781,40 @@
 
 
 
+        <!-- Education 4th row container starts from here  -->
+        <div class="edurowcontainer">
+
+            <!-- Education column1 container starts from here  -->
+            <div class="educol1container">
+                <h3 class="eduyear">2027</h3>
+
+            </div>
+
+
+            <!-- Education column2 container starts from here  -->
+            <div class="educol2container">
+
+                <h3 class="educoursename">MASTER OF TECHNOLOGY, COMPUTER SCIENCE & ENGINEERING</h3>
+                <h3 class="eduinstitutename">SANDIP UNIVERSITY</h3>
+                <h3 class="educoursediscription">pursuing....</h3>
+
+
+            </div>
+
+
+            <!-- Education column3 container starts from here  -->
+            <div class="educol3container">
+                <a href="#" target="_blank" class="edudownload1">Available Soon</a>
+                <a href="#" target="_blank" class="edudownload2">Available Soon</a>
+
+            </div>
+
+
+
+        </div>
+
+        
+        
         <!-- Education 3rd row container starts from here  -->
         <div class="edurowcontainer">
 
@@ -531,7 +830,7 @@
 
                 <h3 class="educoursename">BACHELOR OF TECHNOLOGY, COMPUTER SCIENCE & ENGINEERING</h3>
                 <h3 class="eduinstitutename">UTTARAKHAND TECHNICAL UNIVERSITY</h3>
-                <h3 class="educoursediscription">Pursuing the bachelor's degree</h3>
+                <h3 class="educoursediscription">Scored 70%, with add on Artificial Intelligence & Machine Learning.</h3>
 
 
             </div>
@@ -539,8 +838,8 @@
 
             <!-- Education column3 container starts from here  -->
             <div class="educol3container">
-                <a href="#" target="_blank" class="edudownload1">MARKSHEET &darr;</a>
-                <a href="#" target="_blank" class="edudownload2">CERTIFICATE &darr;</a>
+                <a href="#" target="_blank" class="edudownload1"> Available Soon </a>
+                <a href="#" target="_blank" class="edudownload2"> Available Soon </a>
 
             </div>
 
@@ -572,8 +871,8 @@
 
             <!-- Education column3 container starts from here  -->
             <div class="educol3container">
-                <a href="pdfiles/12thMarksheetOrg.pdf" target="_blank" class="edudownload1">MARKSHEET &darr;</a>
-                <a href="pdfiles/12thMarksheetOrg.pdf" target="_blank" class="edudownload2">CERTIFICATE &darr;</a>
+                <a href="#pdfiles/12thMarksheetOrg.pdf" target="_blank" class="edudownload1">Available Soon</a>
+                <a href="#pdfiles/12thMarksheetOrg.pdf" target="_blank" class="edudownload2">Available Soon</a>
 
             </div>
 
@@ -605,8 +904,8 @@
 
             <!-- Education column3 container starts from here  -->
             <div class="educol3container">
-                <a href="pdfiles/10thMarksheetOrg.pdf" target="_blank" class="edudownload1">MARKSHEET &darr;</a>
-                <a href="#" target="_blank" class="edudownload2">CERTIFICATE &darr;</a>
+                <a href="#pdfiles/10thMarksheetOrg.pdf" target="_blank" class="edudownload1">Available Soon</a>
+                <a href="pdfiles/10thCertificateOrg.pdf" target="_blank" class="edudownload2">CERTIFICATE &darr;</a>
 
             </div>
 
@@ -616,71 +915,6 @@
 
 
 
-
-
-    </div>
-
-
-    <!-- Achievements main container starts from here  -->
-    <div class="achmaincontainer">
-
-        <!-- heading tag for achievements -->
-        <h1 class="achheading" id="achievements">ACHIEVEMENTS</h1>
-        
-        <!-- a dedicated section for science fair -->
-        <div class="achsciencefair">
-
-            <!-- achievements slider as sliding images of science fair as achievementslider-->
-            <div class="achievementslider">
-
-                <div class="slidechild">
-                    <!-- list of sliding images -->
-                    <img src="images/ScienceFair1.jpg" alt="ScienceFair1">
-                    <img src="images/ScienceFair2.jpg" alt="ScienceFair2">
-
-                </div>
-            </div>
-            
-            <!-- some flex contents for images placed as sciencefairdetails -->
-            <div class="sciencefairdetails">
-
-                <div class="achsciencefairmarqueecontainer">
-                    <marquee behavior="alternate" direction="right" scrolldelay="500" class="achsciencefairmarquee"><h3 class="sciencefairdetailsh3">Secured 1st Position</h3></marquee>
-                    <marquee behavior="alternate" direction="left" scrolldelay="500" class="achsciencefairmarquee"><h3 class="sciencefairdetailsh3">Won 1st Prize</h3></marquee>
-                </div>
-                
-                <h2 class="sciencefairdetailsh2">In Science Fair Organised By NDMC DELHI</h2>
-                
-
-                
-            </div>
-        </div>
-
-        <!-- kvs captain achievements container -->
-        <div class="achkvsall">
-
-            <!-- kvs dbg school captain section  -->
-            <div class="achkvsschoolcapt">
-                <img src="images/Schoolcaptain1.png" alt="Schoolcaptain.jpg">
-                <marquee behavior="alternate" direction="right" scrolldelay="500" class="achkvsmarquee"><h3 class="achspan">2020 - 2021</h3></marquee>
-                <h3 class= "achname">SCHOOL CAPTAIN</h3>
-            </div>
-
-            <!-- kvs dbg vice captain section  -->
-            <div class="achkvsschoolcapt">
-                <img src="images/Vicecaptain.png" alt="Vicecaptain.jpg">
-                <marquee behavior="alternate" direction="right" scrolldelay="500" class="achkvsmarquee"><h3 class="achspan">2019 - 2020</h3></marquee>
-                <h3 class="achname">VICE CAPTAIN</h3>
-            </div>
-
-            <!-- kvs dbg house captain section  -->
-            <div class="achkvsschoolcapt">
-                <img src="images/Housecaptain.png" alt="Housecaptain.jpg">
-                <marquee behavior="alternate" direction="right" scrolldelay="500" class="achkvsmarquee"><h3 class="achspan">2019 - 2020</h3></marquee>
-                <h3 class="achname">HOUSE CAPTAIN</h3>
-            </div>
-
-        </div>
 
 
     </div>
@@ -715,6 +949,7 @@
                     <h3 class="trainingsname"> <a href="https://www.udemy.com/certificate/UC-76d8e2c7-62ab-41a4-b4e5-c9fbf3b72bba/" target="_blank"> "CSS Complete Course For Beginners" from Udemy </a> </h3>
                     <h3 class="trainingsname"> <a href="https://www.udemy.com/certificate/UC-fbc5a724-4ca2-4160-9e2d-69a70f2c6cfb/" target="_blank"> "Javascript Mastery From Basics To Advanced" from Udemy </a> </h3>
                     <h3 class="trainingsname"> <a href="https://www.udemy.com/certificate/UC-65c90308-25b4-4613-8eb7-09a5fc58d395/" target="_blank"> "CSS, BootStrap, JavaScript And Python Stack Course" from Udemy </a> </h3>
+                    <h3 class="trainingsname"> <a href="https://www.udemy.com/certificate/UC-c80179e5-32de-40d7-8082-a92a54b50620/" target="_blank">"The Complete Django Web Development Course" from Udemy </a> </h3>
                     <h3 class="trainingsname"> <a href="https://simpli.app.link/CCEjvcVyBOb/" target="_blank">"Machine Learning" from Simplilearn </a> </h3>
 
                     <!-- <h3 class="trainingsname"> <a href="http://#certLink" target="_blank"> "Machine Learning" from Simplilearn </a> </h3> -->
@@ -740,6 +975,91 @@
         </div>
     </div>
 
+
+    
+    <!-- Achievements main container starts from here  -->
+    <div class="achmaincontainer">
+
+        <!-- heading tag for achievements -->
+        <h1 class="achheading" id="achievements">ACHIEVEMENTS</h1>
+        
+        <!-- a dedicated section for science fair -->
+        <div class="achsciencefair fontxxsmall"">
+
+            <!-- achievements slider as sliding images of science fair as achievementslider-->
+            <div class="achievementslider">
+
+                <div class="slidechild">
+                    <!-- list of sliding images -->
+                    <img src="images/Chairperson.jpg" alt="Chairperson & Founder - JIGSY INDIA">
+                    <img src="images/ScienceFair1.jpg" alt="ScienceFair1">
+                    <img src="images/ScienceFair2.jpg" alt="ScienceFair2">
+
+                </div>
+            </div>
+            
+            <!-- some flex contents for images placed as sciencefairdetails -->
+            <div class="sciencefairdetails">
+
+                <div class="achsciencefairmarqueecontainer">
+                    <marquee behavior="alternate" direction="right" scrolldelay="500" class="achsciencefairmarquee"><h3 class="sciencefairdetailsh3">Founded & Chaired JIGSY INDIA</h3></marquee>
+                    <marquee behavior="alternate" direction="right" scrolldelay="500" class="achsciencefairmarquee"><h3 class="sciencefairdetailsh3">Secured 1st Position</h3></marquee>
+                    <marquee behavior="alternate" direction="left" scrolldelay="500" class="achsciencefairmarquee"><h3 class="sciencefairdetailsh3">Won 1st Prize</h3></marquee>
+                </div>
+                
+                <h2 class="sciencefairdetailsh2">JIGYASU INTEGRATED GLOBAL SERVICES PRIVATE LIMITED</h2>
+                
+
+                
+            </div>
+        </div>
+
+        <!-- kvs captain achievements container -->
+        <div class="achkvsall fontxxsmall" style="overflow-wrap: anywhere;">
+
+            <!-- Jigsy Chairperson section  -->
+            <div class="achkvsschoolcapt">
+                <img src="images/chairperson.png" alt="Chairperson.jpg" style="border-radius:40%;">
+                <marquee behavior="alternate" direction="right" scrolldelay="500" class="achkvsmarquee"><h3 class="achspan">2025 - Present</h3></marquee>
+                <h3 class= "achname">CHAIRPERSON JIGSY INDIA</h3>
+            </div>
+            
+            <!-- kvs dbg school captain section  -->
+            <div class="achkvsschoolcapt">
+                <img src="images/Schoolcaptain1.png" alt="Schoolcaptain.jpg">
+                <marquee behavior="alternate" direction="right" scrolldelay="500" class="achkvsmarquee"><h3 class="achspan">2020 - 2021</h3></marquee>
+                <h3 class= "achname">SCHOOL CAPTAIN</h3>
+            </div>
+
+            <!-- kvs dbg vice captain section  -->
+            <div class="achkvsschoolcapt">
+                <img src="images/Vicecaptain.png" alt="Vicecaptain.jpg">
+                <marquee behavior="alternate" direction="right" scrolldelay="500" class="achkvsmarquee"><h3 class="achspan">2019 - 2020</h3></marquee>
+                <h3 class="achname">VICE CAPTAIN</h3>
+            </div>
+
+            <!-- kvs dbg house captain section  -->
+            <div class="achkvsschoolcapt">
+                <img src="images/Housecaptain.png" alt="Housecaptain.jpg">
+                <marquee behavior="alternate" direction="right" scrolldelay="500" class="achkvsmarquee"><h3 class="achspan">2019 - 2020</h3></marquee>
+                <h3 class="achname">HOUSE CAPTAIN</h3>
+            </div>
+
+            <!-- kvs dbg house captain section  -->
+            <div class="achkvsschoolcapt">
+                <img src="images/captain.png" alt="Captain.jpg">
+                <marquee behavior="alternate" direction="right" scrolldelay="500" class="achkvsmarquee"><h3 class="achspan">2018 - 2016</h3></marquee>
+                <h3 class="achname">CAPTAIN</h3>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    
+
     <div class="footer">
 
         <!-- heading tag for Footer Feedback -->
@@ -747,24 +1067,24 @@
 
         <!-- suggestion main container starts here -->
         <div class="suggestioncontainer">
-            
-            <form action="/actionaddedsoon" class="suggestion1stsubcont">
+            <form id="suggestionForm" class="suggestion1stsubcont">
                 <label for="suggestermail">Enter Your Mail:</label>
-                <input type="email" name="suggestermail" id="suggestermail" placeholder="abc@domain.com">
-                                
+                <input type="email" name="suggestermail" id="suggestermail" placeholder="jigyasu@domain.com">
+                    
                 <label for="name">Your Full Name:</label>
-                <input type="text" id="name" placeholder="Jigyasu Vatsa">
-
+                <input type="text" name="name" id="name" placeholder="Jigyasu Vatsa">
+        
                 <label for="suggestedcontent">Your Valuable Suggestions:</label>
                 <textarea name="suggestedcontent" id="suggestedcontent" placeholder="Please write down your suggestions here:"></textarea>
-
+        
                 <label for="designation">Your Designation With Company:</label>
-                <input type="text" id="name" placeholder="Designation @ CompanyName">
-            
+                <input type="text" name="designation" id="designationInput" placeholder="Designation @ CompanyName">
+                
                 <button type="submit">Submit Your Valuable Suggestion</button>
-            
+                
+                <div id="formMessage" style="margin-top: 15px;"></div> 
+                
             </form>
-            
         </div>
 
 
@@ -778,14 +1098,23 @@
         </div>
 
         <!-- copyright footer begins here -->
-        <div class="copyrightfootercontainer">
+        <div class="copyrightfootercontainer" style="font-size:small;">
             <!-- copyright tag for this web page -->
-            <h3 class="copyrightfooter">Copyright Â© 2024 - "Mr. Jigyasu Vatsa" All Rights Reserved</h3>
-            <h4 class="designedby">Designed and Hosted by Jigyasu Vatsa</h4>
+            <!--h3 class="copyrightfooter">Copyright Â© 2024 - "Mr. Jigyasu Vatsa" All Rights Reserved</h3>
+            <h4 class="designedby">Designed and Hosted by Jigyasu Vatsa</h4-->
+            
+            <div class="mb-1">Developed & Maintained by Mr. JIGYASU VATSA</div>
+            
+            <div class="mb-1">
+              © <script>document.write(new Date().getFullYear());</script> - 
+              <script>
+                const currentYear = new Date().getFullYear();
+                document.write(currentYear !== 2025 ? currentYear : '');
+              </script>
+              All rights reserved. Hosted by Jigyasu Integrated Global Services Private Limited
+            </div>   
 
         </div>
-
-
 
 
 
