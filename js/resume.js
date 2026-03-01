@@ -74,9 +74,48 @@ function myreadmorefunc6()
 
 }
 
+// Experience section KnowMore Script
+
+document.getElementById("exprdmore7").addEventListener("click",myreadmorefunc7);
+
+function myreadmorefunc7()
+{
+    document.getElementById ("expreadmorecntnt7").classList.toggle('showMe');
+    
+    document.getElementById("exprdmore7").style.display="none";
+
+}
 
 
+function filterExperience(type) {
+    const experiences = document.querySelectorAll(".exp");
 
+    experiences.forEach(exp => {
+        const category = exp.getAttribute("data-category");
+
+        if (type === "all") {
+            exp.style.display = "flex";
+        } 
+        else if (type === "default") {
+            if (category === "industrial" || category === "internship") {
+                exp.style.display = "flex";
+            } else {
+                exp.style.display = "none";
+            }
+        } 
+        else {
+            if (category === type) {
+                exp.style.display = "flex";
+            } else {
+                exp.style.display = "none";
+            }
+        }
+    });
+}
+
+window.onload = function () {
+    filterExperience('default');
+};
 
 // Floating cursor for move to top 
 
