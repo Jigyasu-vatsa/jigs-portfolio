@@ -37,7 +37,16 @@
         <ul class="hnavbar">
             
             <!-- hnavitems as Menu items -->
-            <li class="hnavitems"><a href="#experience">Experience</a></li>
+            <li class="hnavitems dropdown">
+				<a href="#experience" class="dropbtn">Experience ▾</a>
+				<div class="dropdown-content">
+					<a href="#experience" onclick="filterExperience('default')">Industrial + Internship</a>
+					<a href="#experience" onclick="filterExperience('all')">All</a>
+					<a href="#experience" onclick="filterExperience('industrial')">Industrial</a>
+					<a href="#experience" onclick="filterExperience('internship')">Internships</a>
+					<a href="#experience" onclick="filterExperience('teaching')">Teaching / Academic</a>
+				</div>
+			</li>
             <li class="hnavitems"><a href="#projects">Project</a></li>
             <li class="hnavitems"><a href="#skills">Skill</a></li>
             <li class="hnavitems"><a href="#educations">Education</a></li>
@@ -78,10 +87,11 @@
                 
                 <h3 class="contact">Mob: <a href="tel:+919431400022" class="phone">+919431400022</a> || <a href="mailto:jigyasu.vatsa@gmail.com" class="mail">jigyasu.vatsa@gmail.com</a> || <a href="https://jigyasu-vatsa.github.io/jigs-portfolio/" target="_blank" class="resumeL displayabove400px">jigyasu.jigsy.in</a></h3>
                 <!-- /* objective section under info */ -->
-                <h3 class="objective">I intent to make contribution in worlds digitalization for information on every citizens fingertip with dedication towards professionalism stands with ethics. Making impacts by development and generating employments with my skills, staying updated and taking the world to the next level, I will give my best 
-                effort to reach my goals and objectives to continue with professionalism towards humanity.
-                Adaptive ethical interpersonal collaborative commitment to excellence for contributions to the 
-                growth and development of Mankind.
+                <h3 class="objective">I intent to make contribution in worlds digitalization for information on every citizens fingertip with dedication towards professionalism stands with ethics. Making impacts by development and generating employments with my skills, staying updated and taking the world to the next level, I will give my best effort to reach my goals and objectives to continue with professionalism towards humanity.
+                </h3>
+				
+				<h3 class="objective1">I intent to make contribution in worlds digitalization for information on every citizens fingertip with dedication towards professionalism stands with ethics. Making impacts by development and generating employments with my skills, staying updated and taking the world to the next level.
+				<div>Adaptive ethical interpersonal collaborative commitment to excellence for contributions to the growth and development of Mankind.</div>
                 </h3>
 
                 <div style="text-align:center; margin:20px auto auto auto;" class="displaybelow400px "><a href="pdfiles/JigyasuVatsaResume.pdf" target="_blank" class="resumedownloadbtn" style="padding: 5px 5px 5px 8px;">Resume &darr;</a></div>
@@ -108,7 +118,7 @@
         <h1 class="expheading" id="experience">EXPERIENCE</h1>
 
         <!-- experience Jigsy India sub flex container 6-->
-        <div class="exp">
+        <div class="exp" data-category="industrial">
 
             <!-- experience duration1 -->
             <div class="expduration">
@@ -131,14 +141,15 @@
                 <!-- tag for experience description -->
                 <h3 class="expdescription">Contributing worlds digitalization ecosystem with ethical professionalism, as well generating employment in <button class="expreadmore" id="exprdmore6">Know More</button><div class="expreadmorecontent" id="expreadmorecntnt6">different sectors including software industry. Working as Full Stack Developer under the sector JIGSY Tech of JIGSY INDIA. For more information visit us @ our official site dedicated for <a href="https://www.jigsy.in/" target="_blank"> JIGYASU INTEGRATED GLOBAL SERVICES PRIVATE LIMITED</a>.</div>
                 <!-- option to download respective certificate -->
-                <a href="#pdfiles/RenukaAssociatesOfferLetterJigyasuVatsaNov24.pdf" target="_blank" class="expcertificatedownload">CERTIFICATE &darr;</a>
+                <a href="#pdfiles/JigsyIndia.pdf" target="_blank" class="expcertificatedownload">CERTIFICATE &darr;</a>
                 </h3>
                 
             </div>
         </div>
+		
         
         <!-- experience IRCTC DEC24 sub flex container 5-->
-        <div class="exp">
+        <div class="exp" data-category="internship">
 
             <!-- experience duration1 -->
             <div class="expduration">
@@ -168,7 +179,7 @@
         </div>
 
         <!-- experience renuka associates sub flex container 4-->
-        <div class="exp">
+        <div class="exp" data-category="internship">
 
             <!-- experience duration1 -->
             <div class="expduration">
@@ -198,7 +209,7 @@
         </div>
 
         <!-- experience sub flex container 3 -->
-        <div class="exp">
+        <div class="exp" data-category="internship">
 
             <!-- experience duration3 -->
             <div class="expduration">
@@ -226,7 +237,7 @@
         </div>
 
         <!-- experience sub flex container 2 -->
-        <div class="exp">
+        <div class="exp" data-category="internship">
 
             <!-- experience duration2 -->
             <div class="expduration">
@@ -253,7 +264,7 @@
         </div>
         
         <!-- experience sub flex container 1 -->
-        <div class="exp">
+        <div class="exp" data-category="internship">
 
             <!-- experience duration1 -->
             <div class="expduration">
@@ -281,6 +292,37 @@
                 
             </div>
         </div>
+		
+		<!-- experience Jigsy India sub flex container 6-->
+        <div class="exp" data-category="teaching">
+
+            <!-- experience duration1 -->
+            <div class="expduration">
+                <h3>JAN 2026</h3>
+                <h6>--</h6>
+                <h3> Present </h3>
+
+            </div>
+
+            <!-- experience information for duration1 -->
+            <div class="expinfo">
+                
+                
+                <!-- tag for company name -->
+                <h3 class="companyname">SANDIP UNIVERSITY, MADHUBANI, BIHAR</h3>
+                
+                <!-- tag for working designation -->
+                <h3 class="designation">FACULTY - TEACHING ASSISTANT</h3>
+                
+                <!-- tag for experience description -->
+                <h3 class="expdescription">Responsible for students to get them ready to contribute in industry by providing them complete exposure, how to work, how to integrate different technologies <button class="expreadmore" id="exprdmore7">Know More</button><div class="expreadmorecontent" id="expreadmorecntnt7">to deliver specific requiremnts. Engaged with B.Tech, CSE, 2022-2026 batch for Advanced Technology - II and with 2024-2028 batch for DAA.</div>
+                <!-- option to download respective certificate -->
+                <a href="#pdfiles/SandipUniversity.pdf" target="_blank" class="expcertificatedownload">CERTIFICATE &darr;</a>
+                </h3>
+                
+            </div>
+        </div>
+		
     </div>
 
 
