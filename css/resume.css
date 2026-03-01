@@ -114,7 +114,7 @@ html, body{
 }
 
 .dropdown-content a {
-    color: white;
+    color: white !important;
     padding: 10px 14px;
     text-decoration: none;
     display: block;
@@ -1493,6 +1493,7 @@ html, body{
       background-color: #555;
     }
     
+
 
 
 
